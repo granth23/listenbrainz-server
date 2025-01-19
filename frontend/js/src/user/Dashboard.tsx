@@ -103,6 +103,35 @@ export default function Listen() {
   const [webSocketListens, setWebSocketListens] = React.useState<Array<Listen>>(
     []
   );
+  const listenOne = {
+    inserted_at: 1737005519,
+    listened_at: 1737005519,
+    recording_msid: "ceb99659-74a1-495a-b266-99baf3e2e01f",
+    track_metadata: {
+      additional_info: {
+        duration_ms: 275000,
+        media_player: "BrainzPlayer",
+        music_service: "music.apple.com",
+        music_service_name: "Apple Music",
+        origin_url:
+          "https://music.apple.com/in/album/gun-gun-guna/486353388?i=486353433",
+        recording_msid: "ceb99659-74a1-495a-b266-99baf3e2e01f",
+        submission_client: "BrainzPlayer",
+      },
+      brainzplayer_metadata: {
+        artist_name: "Udit Narayan, Sunidhi Chauhan & Ajay-Atul",
+        release_name: "Agneepath (Original Motion Picture Soundtrack)",
+        track_name: "Gun Gun Guna",
+      },
+      artist_name: "Ajay-Atul, Udit Narayan, Sunidhi Chauhan",
+      release_name: "Agneepath (Original Motion Picture Soundtrack)",
+      track_name: "Gun Gun Guna",
+    },
+    user_name: "holycow23",
+  };
+  const [manualListens, setManualListens] = React.useState<Array<Listen>>([
+    listenOne,
+  ]);
   const [followingList, setFollowingList] = React.useState<Array<string>>([]);
 
   const [deletedListen, setDeletedListen] = React.useState<Listen | null>(null);
@@ -441,11 +470,29 @@ export default function Listen() {
     setSearchParams({ min_ts: minTimestampInSeconds.toString() });
   };
 
-  let allListenables = listens;
+  let allListenables = [...manualListens, ...listens];
+  const [displayedListens, setDisplayedListens] = React.useState(
+    allListenables
+  );
+  allListenables = allListenables.sort((a, b) => b.listened_at - a.listened_at);
+  const [showingUnlinked, setShowingUnlinked] = React.useState(false);
   if (userPinnedRecording) {
     const listenablePin = getListenablePin(userPinnedRecording);
-    allListenables = [listenablePin, ...listens];
+    allListenables = [listenablePin, ...allListenables];
   }
+
+  const viewUnlinkedListens = () => {
+    const unlinkedListens = allListenables.filter(
+      (listen) => listen.linked == false
+    );
+    setDisplayedListens(unlinkedListens);
+    setShowingUnlinked(true);
+  };
+
+  const viewAllListens = () => {
+    setDisplayedListens(allListenables);
+    setShowingUnlinked(false);
+  };
 
   React.useEffect(() => {
     dispatch({
@@ -607,6 +654,19 @@ export default function Listen() {
               </div>
             )}
             <button
+              className="btn btn-info dropdown-toggle"
+              type="button"
+              onClick={() => {
+                if (showingUnlinked) {
+                  viewAllListens();
+                } else {
+                  viewUnlinkedListens();
+                }
+              }}
+            >
+              {showingUnlinked ? "View All Listens" : "View Unlinked Listens"}
+            </button>
+            <button
               type="button"
               className="btn btn-icon btn-info atom-button"
               data-toggle="modal"
@@ -666,7 +726,7 @@ export default function Listen() {
             </button>
           </div>
 
-          {listens.length > 0 && (
+          {displayedListens.length > 0 && (
             <div>
               <div
                 id="listens"
@@ -674,7 +734,7 @@ export default function Listen() {
                 ref={listensTable}
                 style={{ opacity: "1" }}
               >
-                {listens.map(getListenCard)}
+                {displayedListens.map(getListenCard)}
               </div>
               {listens.length < expectedListensPerPage && (
                 <h5 className="text-center">No more listens to show</h5>

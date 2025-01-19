@@ -65,6 +65,7 @@ declare type Listen = BaseListenFormat & {
   listened_at_iso?: string | null;
   playing_now?: boolean | null;
   inserted_at?: number;
+  linked?: boolean;
 };
 
 declare type Recommendation = Listen & {
@@ -656,7 +657,6 @@ declare type BrainzPlayerSettings = {
     "spotify" | "youtube" | "soundcloud" | "appleMusic"
   >;
 };
-
 
 declare type UserPreferences = {
   saveData?: boolean;

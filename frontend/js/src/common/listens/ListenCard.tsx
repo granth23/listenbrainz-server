@@ -334,8 +334,10 @@ export class ListenCard extends React.Component<
     }
     let thumbnail;
     if (customThumbnail) {
+      this.state.listen.linked = true;
       thumbnail = customThumbnail;
     } else if (thumbnailSrc) {
+      this.state.listen.linked = true;
       let thumbnailLink;
       let thumbnailTitle;
       let optionalAttributes = {};
@@ -378,6 +380,7 @@ export class ListenCard extends React.Component<
         </div>
       );
     } else if (releaseMBID) {
+      this.state.listen.linked = true;
       thumbnail = (
         <a
           href={`https://musicbrainz.org/release/${releaseMBID}/cover-art`}
@@ -404,6 +407,7 @@ export class ListenCard extends React.Component<
         </a>
       );
     } else if (isLoggedIn && Boolean(recordingMSID)) {
+      this.state.listen.linked = false;
       const openModal = () => {
         NiceModal.show(MBIDMappingModal, {
           listenToMap: listen,
@@ -432,6 +436,7 @@ export class ListenCard extends React.Component<
         </div>
       );
     } else if (recordingMBID || releaseGroupMBID) {
+      this.state.listen.linked = true;
       if (recordingMBID) {
         thumbnail = (
           <a
@@ -472,6 +477,7 @@ export class ListenCard extends React.Component<
         );
       }
     } else {
+      this.state.listen.linked = true;
       // eslint-disable-next-line react/jsx-no-useless-fragment
       thumbnail = (
         <div className="listen-thumbnail">
@@ -491,6 +497,7 @@ export class ListenCard extends React.Component<
     return (
       <Card
         {...otherProps}
+        listen={listen}
         onDoubleClick={this.playListen}
         className={`listen-card ${isCurrentlyPlaying ? "current-listen" : ""}${
           compact ? " compact" : ""
