@@ -89,8 +89,21 @@ export default function Listen() {
     already_reported_user = false,
   } = data || {};
 
-  const previousListenTs = listens[0]?.listened_at;
-  const nextListenTs = listens[listens.length - 1]?.listened_at;
+  const [displayedListens, setDisplayedListens] = React.useState(listens);
+  const [showingUnlinked, setShowingUnlinked] = React.useState(false);
+  const unlinkedListens = listens.filter((listen) => listen.linked == false);
+  const viewUnlinkedListens = () => {
+    setDisplayedListens(unlinkedListens);
+    setShowingUnlinked(true);
+  };
+  const viewAllListens = () => {
+    setDisplayedListens(listens);
+    setShowingUnlinked(false);
+  };
+
+  const previousListenTs = displayedListens[0]?.listened_at;
+  const nextListenTs =
+    displayedListens[displayedListens.length - 1]?.listened_at;
 
   const { currentUser, websocketsUrl, APIService } = React.useContext(
     GlobalAppContext
@@ -103,35 +116,6 @@ export default function Listen() {
   const [webSocketListens, setWebSocketListens] = React.useState<Array<Listen>>(
     []
   );
-  const listenOne = {
-    inserted_at: 1737005519,
-    listened_at: 1737005519,
-    recording_msid: "ceb99659-74a1-495a-b266-99baf3e2e01f",
-    track_metadata: {
-      additional_info: {
-        duration_ms: 275000,
-        media_player: "BrainzPlayer",
-        music_service: "music.apple.com",
-        music_service_name: "Apple Music",
-        origin_url:
-          "https://music.apple.com/in/album/gun-gun-guna/486353388?i=486353433",
-        recording_msid: "ceb99659-74a1-495a-b266-99baf3e2e01f",
-        submission_client: "BrainzPlayer",
-      },
-      brainzplayer_metadata: {
-        artist_name: "Udit Narayan, Sunidhi Chauhan & Ajay-Atul",
-        release_name: "Agneepath (Original Motion Picture Soundtrack)",
-        track_name: "Gun Gun Guna",
-      },
-      artist_name: "Ajay-Atul, Udit Narayan, Sunidhi Chauhan",
-      release_name: "Agneepath (Original Motion Picture Soundtrack)",
-      track_name: "Gun Gun Guna",
-    },
-    user_name: "holycow23",
-  };
-  const [manualListens, setManualListens] = React.useState<Array<Listen>>([
-    listenOne,
-  ]);
   const [followingList, setFollowingList] = React.useState<Array<string>>([]);
 
   const [deletedListen, setDeletedListen] = React.useState<Listen | null>(null);
@@ -470,29 +454,11 @@ export default function Listen() {
     setSearchParams({ min_ts: minTimestampInSeconds.toString() });
   };
 
-  let allListenables = [...manualListens, ...listens];
-  const [displayedListens, setDisplayedListens] = React.useState(
-    allListenables
-  );
-  allListenables = allListenables.sort((a, b) => b.listened_at - a.listened_at);
-  const [showingUnlinked, setShowingUnlinked] = React.useState(false);
+  let allListenables = listens;
   if (userPinnedRecording) {
     const listenablePin = getListenablePin(userPinnedRecording);
-    allListenables = [listenablePin, ...allListenables];
+    allListenables = [listenablePin, ...listens];
   }
-
-  const viewUnlinkedListens = () => {
-    const unlinkedListens = allListenables.filter(
-      (listen) => listen.linked == false
-    );
-    setDisplayedListens(unlinkedListens);
-    setShowingUnlinked(true);
-  };
-
-  const viewAllListens = () => {
-    setDisplayedListens(allListenables);
-    setShowingUnlinked(false);
-  };
 
   React.useEffect(() => {
     dispatch({
@@ -502,13 +468,15 @@ export default function Listen() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allListenables]);
 
-  const isNewestButtonDisabled = listens[0]?.listened_at >= latestListenTs;
+  const isNewestButtonDisabled =
+    displayedListens[0]?.listened_at >= latestListenTs;
   const isNewerButtonDisabled =
     !previousListenTs || previousListenTs >= latestListenTs;
   const isOlderButtonDisabled = !nextListenTs || nextListenTs <= oldestListenTs;
   const isOldestButtonDisabled =
-    listens.length > 0 &&
-    listens[listens.length - 1]?.listened_at <= oldestListenTs;
+    displayedListens.length > 0 &&
+    displayedListens[displayedListens.length - 1]?.listened_at <=
+      oldestListenTs;
   const isUserLoggedIn = !isNil(currentUser) && !isEmpty(currentUser);
   const isCurrentUsersPage = currentUser?.name === user?.name;
 
@@ -559,7 +527,7 @@ export default function Listen() {
           {user && <UserSocialNetwork user={user} />}
         </div>
         <div className="col-md-8 col-md-pull-4">
-          {!listens.length && (
+          {!displayedListens.length && (
             <div className="empty-listens">
               <FontAwesomeIcon icon={faCompactDisc as IconProp} size="10x" />
               {isCurrentUsersPage ? (
@@ -606,7 +574,7 @@ export default function Listen() {
             </div>
           )}
           <div className="listen-header">
-            {listens.length === 0 ? (
+            {displayedListens.length === 0 ? (
               <div id="spacer" />
             ) : (
               <h3 className="header-with-line">Recent listens</h3>
@@ -653,19 +621,18 @@ export default function Listen() {
                 </ul>
               </div>
             )}
-            <button
-              className="btn btn-info dropdown-toggle"
-              type="button"
-              onClick={() => {
-                if (showingUnlinked) {
-                  viewAllListens();
-                } else {
-                  viewUnlinkedListens();
-                }
-              }}
-            >
-              {showingUnlinked ? "View All Listens" : "View Unlinked Listens"}
-            </button>
+            {unlinkedListens.length > 0 && (
+              <button
+                className="btn btn-info dropdown-toggle"
+                type="button"
+                onClick={() => {
+                  if (showingUnlinked) viewAllListens();
+                  else viewUnlinkedListens();
+                }}
+              >
+                {showingUnlinked ? "View All Listens" : "View Unlinked Listens"}
+              </button>
+            )}
             <button
               type="button"
               className="btn btn-icon btn-info atom-button"
@@ -736,7 +703,7 @@ export default function Listen() {
               >
                 {displayedListens.map(getListenCard)}
               </div>
-              {listens.length < expectedListensPerPage && (
+              {displayedListens.length < expectedListensPerPage && (
                 <h5 className="text-center">No more listens to show</h5>
               )}
               <ul className="pager" id="navigation">
