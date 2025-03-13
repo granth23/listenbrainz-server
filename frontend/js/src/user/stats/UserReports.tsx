@@ -15,6 +15,7 @@ import Pill from "../../components/Pill";
 import UserListeningActivity from "./components/UserListeningActivity";
 import UserTopEntity from "./components/UserTopEntity";
 import UserDailyActivity from "./components/UserDailyActivity";
+import UserArtistEvolution from "./components/UserArtistEvolution";
 import UserArtistMap from "./components/UserArtistMap";
 import { getAllStatRanges, isInvalidStatRange } from "./utils";
 import GlobalAppContext from "../../utils/GlobalAppContext";
@@ -165,6 +166,12 @@ export default function UserReports() {
         <section id="daily-activity">
           {statsExplanationModalButton}
           <UserDailyActivity range={range} user={user} />
+        </section>
+      )}
+      {user && (
+        <section id="artist-evolution">
+          {statsExplanationModalButton}
+          <UserArtistEvolution range={range} user={user} />
         </section>
       )}
       <section id="artist-origin">

@@ -491,71 +491,77 @@ def get_daily_activity(user_name: str):
     }})
 
 
-@stats_api_bp.get("/user/<user_name>/artist-map")
+@stats_api_bp.get("/user/<user_name>/artist-evolution")
 @crossdomain
 @ratelimit()
-def get_artist_map(user_name: str):
-    """
-    Get the artist map for user ``user_name``. The artist map shows the number of artists the user has listened to
-    from different countries of the world.
-
-    A sample response from the endpoint may look like:
-
-    .. code-block:: json
-
-        {
-            "payload": {
-                "from_ts": 1587945600,
-                "last_updated": 1592807084,
-                "artist_map": [
-                    {
-                        "country": "USA",
-                        "artist_count": 34
-                    },
-                    {
-                        "country": "GBR",
-                        "artist_count": 69
-                    },
-                    {
-                        "country": "IND",
-                        "artist_count": 32
-                    }
-                ],
-                "stats_range": "all_time"
-                "to_ts": 1589155200,
-                "user_id": "ishaanshah"
-            }
-        }
-
-    .. note::
-
-        - We cache the results for this query for a week to improve page load times, if you want to request fresh data
-          you can use the ``force_recalculate`` flag.
-
-    :param range: Optional, time interval for which statistics should be returned, possible values are
-        :data:`~data.model.common_stat.ALLOWED_STATISTICS_RANGE`, defaults to ``all_time``
-    :type range: ``str``
-    :param force_recalculate: Optional, recalculate the data instead of returning the cached result.
-    :type force_recalculate: ``bool``
-    :statuscode 200: Successful query, you have data!
-    :statuscode 204: Statistics for the user haven't been calculated, empty response will be returned
-    :statuscode 400: Bad request, check ``response['error']`` for more details
-    :statuscode 404: User not found
-    :resheader Content-Type: *application/json*
-
-    """
+def get_artist_evolution(user_name: str):
     user, stats_range = _validate_stats_user_params(user_name)
-    result = _get_artist_map_stats(user["id"], stats_range)
-    return jsonify({
-        "payload": {
-            "user_id": user_name,
-            "range": stats_range,
-            "from_ts": result.from_ts,
-            "to_ts": result.to_ts,
-            "last_updated": result.last_updated,
-            "artist_map": [x.dict() for x in result.data.__root__]
-        }
-    })
+    
+    # In a real implementation, we would fetch data from the database
+    # For now, return hardcoded data
+    
+    hardcoded_data = {
+        "result": [
+            {
+                "date": "Monday",
+                "artists": [
+                    {"name": "Album 1", "listen_count": 120},
+                    {"name": "Album 2", "listen_count": 150},
+                    {"name": "Album 3", "listen_count": 200}
+                ]
+            },
+            {
+                "date": "Tuesday",
+                "artists": [
+                    {"name": "Album 1", "listen_count": 100},
+                    {"name": "Album 2", "listen_count": 200},
+                    {"name": "Album 3", "listen_count": 150}
+                ]
+            },
+            {
+                "date": "Wednesday",
+                "artists": [
+                    {"name": "Album 1", "listen_count": 150},
+                    {"name": "Album 2", "listen_count": 100},
+                    {"name": "Album 3", "listen_count": 250}
+                ]
+            },
+            {
+                "date": "Thursday",
+                "artists": [
+                    {"name": "Album 1", "listen_count": 200},
+                    {"name": "Album 2", "listen_count": 150},
+                    {"name": "Album 3", "listen_count": 100}
+                ]
+            },
+            {
+                "date": "Friday",
+                "artists": [
+                    {"name": "Album 1", "listen_count": 250},
+                    {"name": "Album 2", "listen_count": 200},
+                    {"name": "Album 3", "listen_count": 150}
+                ]
+            },
+            {
+                "date": "Saturday",
+                "artists": [
+                    {"name": "Album 1", "listen_count": 300},
+                    {"name": "Album 2", "listen_count": 250},
+                    {"name": "Album 3", "listen_count": 200}
+                ]
+            },
+            {
+                "date": "Sunday",
+                "artists": [
+                    {"name": "Album 1", "listen_count": 350},
+                    {"name": "Album 2", "listen_count": 300},
+                    {"name": "Album 3", "listen_count": 250}
+                ]
+            }
+        ]
+    }
+    
+    return jsonify(hardcoded_data)
 
 
 @stats_api_bp.get("/artist/<artist_mbid>/listeners")

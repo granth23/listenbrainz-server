@@ -599,6 +599,29 @@ export default class APIService {
     return response.json();
   };
 
+  getUserArtistEvolution = async (
+    userName?: string,
+    range: UserStatsAPIRange = "all_time"
+  ): Promise<UserArtistEvolutionResponse> => {
+    let url;
+    url = `${this.APIBaseURI}/stats/user/${userName}/artist-evolution?range=${range}`;
+
+    // Uncomment this block to use actual API calls
+    const response = await fetch(url);
+    await this.checkStatus(response);
+
+    if (response.status === 204) {
+      const error = new APIError(
+        "There are no statistics available for this user for this period"
+      );
+      error.status = response.statusText;
+      error.response = response;
+      throw error;
+    }
+
+    return response.json();
+  };
+
   checkStatus = async (response: Response): Promise<void> => {
     if (response.status >= 200 && response.status < 300) {
       return;

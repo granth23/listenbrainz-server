@@ -127,6 +127,16 @@ declare type UserArtistsResponse = {
   };
 };
 
+declare type UserArtistEvolutionResponse = {
+  result: Array<{
+    date: string;
+    artists: Array<{
+      name: string;
+      listen_count: number;
+    }>;
+  }>;
+};
+
 declare type UserReleasesResponse = {
   payload: {
     releases: Array<{
