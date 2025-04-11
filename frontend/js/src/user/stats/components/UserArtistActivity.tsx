@@ -17,6 +17,7 @@ export type UserArtistActivityProps = {
 
 export declare type ChartDataItem = {
   label: string;
+  artistName: string; // Store the original artist name
   [albumName: string]: number | string;
 };
 
@@ -63,6 +64,7 @@ export default function UserArtistActivity(props: UserArtistActivityProps) {
       }
       return {
         label: wrappedLabel,
+        artistName: artist.name, // Store the original artist name
         ...artist.albums.reduce(
           (acc, album) => ({ ...acc, [album.name]: album.listen_count }),
           {} as Record<string, number>
@@ -92,6 +94,41 @@ export default function UserArtistActivity(props: UserArtistActivityProps) {
       setChartData(processedData);
     }
   }, [rawData]);
+
+  // Custom tooltip component that only shows album name and count
+  function CustomTooltip({
+    id,
+    value,
+    color,
+  }: {
+    id: string;
+    value: number;
+    color: string;
+  }) {
+    return (
+      <div
+        style={{
+          padding: "10px",
+          background: "white",
+          border: `1px solid ${color}`,
+          borderRadius: "4px",
+          boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+        }}
+      >
+        <strong>
+          {id}: {value}
+        </strong>
+      </div>
+    );
+  }
+
+  // Function to handle artist label click
+  const handleArtistLabelClick = () => {
+    window.open(
+      `https://www.google.com/search?q=${encodeURIComponent("cnjddc")}`,
+      "_blank"
+    );
+  };
 
   return (
     <Card className="user-stats-card" data-testid="user-artist-activity">
@@ -140,7 +177,9 @@ export default function UserArtistActivity(props: UserArtistActivityProps) {
                   keys={Array.from(
                     new Set(
                       chartData.flatMap((item) =>
-                        Object.keys(item).filter((key) => key !== "label")
+                        Object.keys(item).filter(
+                          (key) => key !== "label" && key !== "artistName"
+                        )
                       )
                     )
                   )}
@@ -155,28 +194,35 @@ export default function UserArtistActivity(props: UserArtistActivityProps) {
                     tickSize: 5,
                     tickPadding: 5,
                     tickRotation: -45,
-                    renderTick: (tick) => (
-                      <g transform={`translate(${tick.x},${tick.y})`}>
-                        {tick.value
-                          .split("\n")
-                          .map((line: string, i: number) => (
-                            <text
-                              key={line}
-                              x={0}
-                              y={10 + i * 15}
-                              textAnchor="end"
-                              dominantBaseline="middle"
-                              style={{
-                                fontSize: 10,
-                                fill: "#000",
-                                transform: `rotate(-45deg)`,
-                              }}
-                            >
-                              {line}
-                            </text>
-                          ))}
-                      </g>
-                    ),
+                    renderTick: (tick) => {
+                      return (
+                        <g
+                          transform={`translate(${tick.x},${tick.y})`}
+                          onClick={() => handleArtistLabelClick()}
+                          style={{ cursor: "pointer" }}
+                        >
+                          {tick.value
+                            .split("\n")
+                            .map((line: string, i: number) => (
+                              <text
+                                key={line}
+                                x={0}
+                                y={10 + i * 15}
+                                textAnchor="end"
+                                dominantBaseline="middle"
+                                style={{
+                                  fontSize: 10,
+                                  fill: "#0000EE", // Use link color
+                                  textDecoration: "underline",
+                                  transform: `rotate(-45deg)`,
+                                }}
+                              >
+                                {line}
+                              </text>
+                            ))}
+                        </g>
+                      );
+                    },
                   }}
                   onClick={(barData, event) => {
                     const albumName = barData.id;
@@ -187,6 +233,13 @@ export default function UserArtistActivity(props: UserArtistActivityProps) {
                       navigate(`/album/${releaseGroupMbid}`);
                     }
                   }}
+                  tooltip={({ id, value, color }) => (
+                    <CustomTooltip
+                      id={id as string}
+                      value={value}
+                      color={color}
+                    />
+                  )}
                 />
               </div>
             </div>
