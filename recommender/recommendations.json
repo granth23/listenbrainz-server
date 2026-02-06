@@ -1,0 +1,775 @@
+{
+  "metadata": {
+    "generated_at": "2026-02-06T13:10:56.046589+00:00",
+    "total_recommendations": 75,
+    "stages": [
+      {
+        "stage": 1,
+        "name": "Top Artists",
+        "count": 25
+      },
+      {
+        "stage": 2,
+        "name": "Next Artists",
+        "count": 25
+      },
+      {
+        "stage": 3,
+        "name": "Collaborator Artists",
+        "count": 25
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "song": "No Enema",
+      "artist": "Seedhe Maut",
+      "mbid": "57588b26-adeb-4237-9638-fc6381fd2328",
+      "artist_mbid": "485f576c-6ade-4c0f-9406-34720f15fb02",
+      "release": "No Enema",
+      "year": 2021,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Kehne Do (feat. Bhaskar & Lil Bhavi)",
+      "artist": "Seedhe Maut",
+      "mbid": "03b4a166-3fc8-4ae1-aca0-6268313c2337",
+      "artist_mbid": "485f576c-6ade-4c0f-9406-34720f15fb02",
+      "release": "DL91 FM",
+      "year": 2025,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "MP3",
+      "artist": "Seedhe Maut",
+      "mbid": "03d9b406-7507-412b-a8be-82082ace5ee4",
+      "artist_mbid": "485f576c-6ade-4c0f-9406-34720f15fb02",
+      "release": "DL91 FM",
+      "year": 2025,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Pickup (feat. OG Lucifer)",
+      "artist": "Seedhe Maut",
+      "mbid": "0ed44950-2ffd-4d58-9050-4b80c0120a4e",
+      "artist_mbid": "485f576c-6ade-4c0f-9406-34720f15fb02",
+      "release": "DL91 FM",
+      "year": 2025,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Abaad (feat. Encore ABJ & Ghaatak)",
+      "artist": "Seedhe Maut",
+      "mbid": "18effa1e-8a01-488b-ad4b-5cf15d475395",
+      "artist_mbid": "485f576c-6ade-4c0f-9406-34720f15fb02",
+      "release": "DL91 FM",
+      "year": 2025,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "No Enema",
+      "artist": "Sez on the Beat",
+      "mbid": "57588b26-adeb-4237-9638-fc6381fd2328",
+      "artist_mbid": "6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa",
+      "release": "No Enema",
+      "year": 2021,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "KKR",
+      "artist": "Sez on the Beat",
+      "mbid": "451e4ab6-4522-4d42-90af-66cba457d5f3",
+      "artist_mbid": "6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa",
+      "release": "Rum, Racks & Roses",
+      "year": 2024,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Kaleshi Launde",
+      "artist": "Sez on the Beat",
+      "mbid": "aaafbc12-bbaa-4d09-91a6-9459a6513b56",
+      "artist_mbid": "6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa",
+      "release": "Rum, Racks & Roses",
+      "year": 2024,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "REAL SHIT - Raftaar",
+      "artist": "Sez on the Beat",
+      "mbid": "c52db11e-49c2-417a-83ed-b1a34775ad78",
+      "artist_mbid": "6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa",
+      "release": "HARD DRIVE Vol. 2",
+      "year": 2024,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Nayaab",
+      "artist": "Sez on the Beat",
+      "mbid": "05f76581-7b85-41aa-9e7e-68e14e50c7b2",
+      "artist_mbid": "6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa",
+      "release": "Nayaab",
+      "year": 2022,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Nacho (extended mix)",
+      "artist": "Bawari Basanti",
+      "mbid": "566450d0-1db3-419d-94da-3b278be130e7",
+      "artist_mbid": "f5e2f4d1-056c-46b1-b8ee-af54663f14bf",
+      "release": "Gaya EP",
+      "year": 2021,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Nacho",
+      "artist": "Bawari Basanti",
+      "mbid": "9f2b2aac-c022-47bc-8896-ec41e0bc561e",
+      "artist_mbid": "f5e2f4d1-056c-46b1-b8ee-af54663f14bf",
+      "release": "Gaya EP",
+      "year": 2021,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Moksha",
+      "artist": "Bawari Basanti",
+      "mbid": "bca16900-f41d-4c05-8472-18741d0f10e9",
+      "artist_mbid": "f5e2f4d1-056c-46b1-b8ee-af54663f14bf",
+      "release": "Orient Dub Mix #2",
+      "year": 2021,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Mumbai Gyal",
+      "artist": "Bawari Basanti",
+      "mbid": "543cff9f-54b2-472c-b0e4-6556946ad5f9",
+      "artist_mbid": "f5e2f4d1-056c-46b1-b8ee-af54663f14bf",
+      "release": "Indian Gyal Riddim",
+      "year": 2017,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Pallo Latke",
+      "artist": "Bawari Basanti",
+      "mbid": "037501ba-4d72-455f-b27e-225dfbe4afaf",
+      "artist_mbid": "f5e2f4d1-056c-46b1-b8ee-af54663f14bf",
+      "release": "Rainbow Rishta (Original Series Soundtrack)",
+      "year": 0,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Who You Are",
+      "artist": "KR$NA",
+      "mbid": "881afefa-05a3-46f0-b7bd-b7de6f983c8d",
+      "artist_mbid": "86ba68eb-ea24-4e78-a009-b35e99cb6193",
+      "release": "Yours Truly",
+      "year": 2025,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Playground",
+      "artist": "KR$NA",
+      "mbid": "a505c712-749c-438b-bb17-b38432e7170c",
+      "artist_mbid": "86ba68eb-ea24-4e78-a009-b35e99cb6193",
+      "release": "Playground",
+      "year": 0,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Koi Lauta De Mere Beete Huye Din",
+      "artist": "KR$NA",
+      "mbid": "0f2831fc-0f47-4077-8d4c-aec086943ba7",
+      "artist_mbid": "86ba68eb-ea24-4e78-a009-b35e99cb6193",
+      "release": "One Man Many Roles - Kishore Kumar",
+      "year": 2018,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Koi Lauta De Mere Beete Huye Din (Revival)",
+      "artist": "KR$NA",
+      "mbid": "6bf1ae19-8441-4189-af1e-85d4e2a78c34",
+      "artist_mbid": "86ba68eb-ea24-4e78-a009-b35e99cb6193",
+      "release": "Door Gagan Ki Chhaon Mein",
+      "year": 1964,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Role Model",
+      "artist": "KR$NA",
+      "mbid": "2030b339-47fa-4058-a145-db07dffbcdb0",
+      "artist_mbid": "86ba68eb-ea24-4e78-a009-b35e99cb6193",
+      "release": "For the Day One$",
+      "year": 2024,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Bumpa",
+      "artist": "King",
+      "mbid": "787b7eac-bcb7-4866-9603-b3178d360579",
+      "artist_mbid": "bda9891c-f6a4-442b-8f1c-65429c3347d8",
+      "release": "Bumpa",
+      "year": 0,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "We Are The Ones",
+      "artist": "King",
+      "mbid": "1a977e53-7d63-46ba-8d55-7e8f5fa57c67",
+      "artist_mbid": "bda9891c-f6a4-442b-8f1c-65429c3347d8",
+      "release": "NEW LIFE",
+      "year": 2023,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "BAWE MAIN CHECK",
+      "artist": "King",
+      "mbid": "6892c32b-62c9-4d1c-964c-0c7817c5fc35",
+      "artist_mbid": "bda9891c-f6a4-442b-8f1c-65429c3347d8",
+      "release": "MONOPOLY MOVES",
+      "year": 0,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Doob Ja",
+      "artist": "King",
+      "mbid": "68558baf-3f48-498e-974f-4a6fac497fe9",
+      "artist_mbid": "bda9891c-f6a4-442b-8f1c-65429c3347d8",
+      "release": "Bhoomi 2022",
+      "year": 2022,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Story of a Bird",
+      "artist": "King",
+      "mbid": "b98822fa-4f4f-48bd-ba27-abfd05628000",
+      "artist_mbid": "bda9891c-f6a4-442b-8f1c-65429c3347d8",
+      "release": "Story of a Bird",
+      "year": 2025,
+      "stage": 1,
+      "stage_name": "Top Artists"
+    },
+    {
+      "song": "Scar Tissue",
+      "artist": "Red Hot Chili Peppers",
+      "mbid": "eb612418-2d98-49af-9fdf-64362326632b",
+      "artist_mbid": "8bfac288-ccc5-448d-9573-c33ea2aa5c30",
+      "release": "Californication",
+      "year": 2020,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Road Trippin’",
+      "artist": "Red Hot Chili Peppers",
+      "mbid": "b8bc05b2-0bb3-46a1-b830-62187e7657e1",
+      "artist_mbid": "8bfac288-ccc5-448d-9573-c33ea2aa5c30",
+      "release": "Meditation - Unplugged - Calm - Acoustic - Soft",
+      "year": 2023,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Under the Bridge",
+      "artist": "Red Hot Chili Peppers",
+      "mbid": "10d1062a-7275-458f-ad0d-906eeaa22c57",
+      "artist_mbid": "8bfac288-ccc5-448d-9573-c33ea2aa5c30",
+      "release": "Playing – The 90s",
+      "year": 2025,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Five Years / When the Levee Breaks / Hot and Nasty",
+      "artist": "Led Zeppelin",
+      "mbid": "463ac14b-6388-414b-bf2b-bb5ef4c187fa",
+      "artist_mbid": "678d88b2-87b0-403b-b63d-5da7465aecc3",
+      "release": "All the Breaks: The 300 Most Essential Drum Breaks of All Time",
+      "year": 2006,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Bron‐Yr‐Aur Stomp",
+      "artist": "Led Zeppelin",
+      "mbid": "3cb9fc23-e3b0-4c56-8936-0aaa4973e8e7",
+      "artist_mbid": "678d88b2-87b0-403b-b63d-5da7465aecc3",
+      "release": "Thulemann Box: The Complete Album Collection 1969-1982",
+      "year": 2024,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Dazed and Confused",
+      "artist": "Led Zeppelin",
+      "mbid": "553510ce-68dd-4e85-9e8c-eafb23d43bab",
+      "artist_mbid": "678d88b2-87b0-403b-b63d-5da7465aecc3",
+      "release": "Thulemann Box: The Complete Album Collection 1969-1982",
+      "year": 2024,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "9Xm House of Dance-Dj Shilpi Sharma-Vol.1",
+      "artist": "Badshah",
+      "mbid": "56d0a3f9-aef2-498e-9076-f43a8041fb89",
+      "artist_mbid": "cd67b8c8-8b2f-4d56-b564-fbd837490256",
+      "release": "9Xm House of Dance - Vol.1",
+      "year": 2020,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Traffic Jam",
+      "artist": "DIVINE",
+      "mbid": "8c8abddd-a8bc-46a6-b3dc-199b7553e44f",
+      "artist_mbid": "a4a6a48a-42a5-493a-9fa1-aaf6a82217e2",
+      "release": "Gunehgar",
+      "year": 2022,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Voodoo",
+      "artist": "Badshah",
+      "mbid": "f064a401-8370-4621-baa6-87eff10e0521",
+      "artist_mbid": "cd67b8c8-8b2f-4d56-b564-fbd837490256",
+      "release": "Voodoo",
+      "year": 2022,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Toxic",
+      "artist": "AP Dhillon",
+      "mbid": "1f732c8b-76c9-454b-9e2e-d205507d0b81",
+      "artist_mbid": "ed29f721-0d40-4a90-9f25-a91c2ccccd5e",
+      "release": "Toxic",
+      "year": 2020,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Baazigar",
+      "artist": "DIVINE",
+      "mbid": "665b1374-20ef-47e8-a726-7b542cf98afb",
+      "artist_mbid": "a4a6a48a-42a5-493a-9fa1-aaf6a82217e2",
+      "release": "Gunehgar",
+      "year": 2022,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Bando Diaries (remix)",
+      "artist": "DIVINE",
+      "mbid": "73c9bd1d-46ac-4127-85b4-f751629db544",
+      "artist_mbid": "a4a6a48a-42a5-493a-9fa1-aaf6a82217e2",
+      "release": "Bando Diaries (remix)",
+      "year": 2020,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Problems Over Peace",
+      "artist": "AP Dhillon",
+      "mbid": "79c9e4bc-1a23-49a7-a4ab-244bc9c9cfaf",
+      "artist_mbid": "ed29f721-0d40-4a90-9f25-a91c2ccccd5e",
+      "release": "Problems Over Peace",
+      "year": 2024,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Tell Me",
+      "artist": "Karan Aujla",
+      "mbid": "015149ef-5a8c-43af-a2fd-9c7a67212a38",
+      "artist_mbid": "4a779683-5404-4b90-a0d7-242495158265",
+      "release": "Tell Me",
+      "year": 2025,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Gangsta",
+      "artist": "Karan Aujla",
+      "mbid": "64fd714a-9862-4e39-b19d-a485801ae2bc",
+      "artist_mbid": "4a779683-5404-4b90-a0d7-242495158265",
+      "release": "Way Ahead",
+      "year": 2022,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "9XM Smashup # 8888 (DJ Ashmit Patel & DJ Ishq Bector)",
+      "artist": "Badshah",
+      "mbid": "573166ac-14c2-486b-b118-01ed9b8d3750",
+      "artist_mbid": "cd67b8c8-8b2f-4d56-b564-fbd837490256",
+      "release": "9XM Smashup # 8888",
+      "year": 2018,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Afsos",
+      "artist": "Anuv Jain",
+      "mbid": "bd9d3b90-5ed1-4265-9b2d-3e318260e76b",
+      "artist_mbid": "addca31a-40ae-4152-afb8-a477da5191f0",
+      "release": "Afsos",
+      "year": 2025,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Afsos",
+      "artist": "AP Dhillon",
+      "mbid": "bd9d3b90-5ed1-4265-9b2d-3e318260e76b",
+      "artist_mbid": "ed29f721-0d40-4a90-9f25-a91c2ccccd5e",
+      "release": "Afsos",
+      "year": 2025,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Alag Aasmaan",
+      "artist": "Anuv Jain",
+      "mbid": "6e0a1dff-fe1f-4c9d-8589-2720fe9845b6",
+      "artist_mbid": "addca31a-40ae-4152-afb8-a477da5191f0",
+      "release": "Alag Aasmaan",
+      "year": 2020,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Antariksh",
+      "artist": "Anuv Jain",
+      "mbid": "d649b35c-6036-47ab-af91-ecb1cc71130b",
+      "artist_mbid": "addca31a-40ae-4152-afb8-a477da5191f0",
+      "release": "Antariksh",
+      "year": 2023,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Tere Bin",
+      "artist": "Talwiinder",
+      "mbid": "7976b75a-d197-4587-98fa-1470b6f24c0d",
+      "artist_mbid": "2c8c0732-7b2d-4271-978b-f893467816b8",
+      "release": "Misfit",
+      "year": 2024,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "The Way You Look",
+      "artist": "Talwiinder",
+      "mbid": "9d0e85da-aa1c-46ac-a048-561b848daa19",
+      "artist_mbid": "2c8c0732-7b2d-4271-978b-f893467816b8",
+      "release": "The Way You Look",
+      "year": 2024,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "High on Me",
+      "artist": "Talwiinder",
+      "mbid": "4de2caac-f8a9-451c-87c0-5b8e82a64122",
+      "artist_mbid": "2c8c0732-7b2d-4271-978b-f893467816b8",
+      "release": "Glory",
+      "year": 2024,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Pagglait",
+      "artist": "Raftaar",
+      "mbid": "6f1e84eb-6991-41b9-ab27-fe8a8df509d5",
+      "artist_mbid": "f5f329bd-7fce-4b28-8208-440a96eeee91",
+      "release": "Pagglait",
+      "year": 2021,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "3 Shaukk",
+      "artist": "Karan Aujla",
+      "mbid": "401a2113-c3e2-4edb-8f48-730a4e284ae1",
+      "artist_mbid": "4a779683-5404-4b90-a0d7-242495158265",
+      "release": "De De Pyaar De 2",
+      "year": 2025,
+      "stage": 2,
+      "stage_name": "Next Artists"
+    },
+    {
+      "song": "Mind’s Eye",
+      "artist": "Foreign Beggars",
+      "mbid": "68d00539-2775-4441-a819-2a4e405e2ff6",
+      "artist_mbid": "34dd3adc-f118-4106-bfac-71820a804f4c",
+      "release": "The Uprising",
+      "year": 2013,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Hold Tight / Let Me Think About It (a cappella) / Still Getting It",
+      "artist": "Foreign Beggars",
+      "mbid": "c477de4c-b63a-4078-b9ae-af7a2406b471",
+      "artist_mbid": "34dd3adc-f118-4106-bfac-71820a804f4c",
+      "release": "Mash Up Mix: Bass 2012",
+      "year": 2012,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Fading Out",
+      "artist": "Foreign Beggars",
+      "mbid": "597b531b-80ec-40e2-a9a9-e0f57925c841",
+      "artist_mbid": "34dd3adc-f118-4106-bfac-71820a804f4c",
+      "release": "Matriarchy",
+      "year": 2020,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Hauli Hauli",
+      "artist": "Neha Kakkar",
+      "mbid": "81046273-f641-42cc-ad24-9e063d03fa0d",
+      "artist_mbid": "9ac67cb4-c838-48ad-b28d-1ff2ae58b758",
+      "release": "Khel Khel Mein",
+      "year": 2024,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Echo",
+      "artist": "KSHMR",
+      "mbid": "64648d6a-04cf-4e67-8eca-b8a8ad0c846a",
+      "artist_mbid": "333cf594-2b90-429f-88f4-a93e6c64cbeb",
+      "release": "Echo",
+      "year": 2021,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Pov: Falling In Love (2022)",
+      "artist": "Jonita Gandhi",
+      "mbid": "2c0afa2c-fb3c-4b96-b459-50dee7089b9a",
+      "artist_mbid": "32560f6d-f87f-4475-a6fb-7c302036aaf1",
+      "release": "Pov: Falling In Love (2022)",
+      "year": 2022,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Yaariyan Mashup",
+      "artist": "Neha Kakkar",
+      "mbid": "c928c5e3-a927-4de9-9e16-7379870c9bcf",
+      "artist_mbid": "9ac67cb4-c838-48ad-b28d-1ff2ae58b758",
+      "release": "Yaariyan",
+      "year": 2013,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Hai Halla",
+      "artist": "Payal Dev",
+      "mbid": "8354f896-38ef-4d2b-b4a5-e1f911ee6f04",
+      "artist_mbid": "5b8bd2fd-7e18-4f93-81a6-a438580e0b59",
+      "release": "Hai Halla",
+      "year": 2017,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Lipstick Laga Ke",
+      "artist": "Payal Dev",
+      "mbid": "376b49ba-e7ee-493b-83c6-cd529fd5dee7",
+      "artist_mbid": "5b8bd2fd-7e18-4f93-81a6-a438580e0b59",
+      "release": "Great Grand Masti",
+      "year": 2016,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Addicted (ਆਦੀ)",
+      "artist": "Jonita Gandhi",
+      "mbid": "8d31c89a-aead-47de-b417-cbfe3a07a27e",
+      "artist_mbid": "32560f6d-f87f-4475-a6fb-7c302036aaf1",
+      "release": "Addicted (ਆਦੀ)",
+      "year": 2024,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Dil Banaane Waaleya",
+      "artist": "Jonita Gandhi",
+      "mbid": "29d10a58-5a4b-4995-9942-07a78f70bfdb",
+      "artist_mbid": "32560f6d-f87f-4475-a6fb-7c302036aaf1",
+      "release": "Fighter",
+      "year": 2024,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Kho Sa Gaya Hoon",
+      "artist": "Neha Kakkar",
+      "mbid": "3a3505eb-130f-42b8-b7af-e561e2feff5d",
+      "artist_mbid": "9ac67cb4-c838-48ad-b28d-1ff2ae58b758",
+      "release": "Yaariyan 2",
+      "year": 2023,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Yaad Reh Jaati Hai (From “The Buckingham Murders”)",
+      "artist": "Payal Dev",
+      "mbid": "5623a2ae-f72a-46a8-b7a0-35e203507bc6",
+      "artist_mbid": "5b8bd2fd-7e18-4f93-81a6-a438580e0b59",
+      "release": "The Buckingham Murders (Original Motion Picture Soundtrack)",
+      "year": 2024,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Kobita",
+      "artist": "Nucleya",
+      "mbid": "d12f161d-4bfa-421c-a3d2-31339e201404",
+      "artist_mbid": "80b5200c-0322-47b2-8237-b157c5f5d095",
+      "release": "Bikash Weds Pinky: Amar Xopun",
+      "year": 2024,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Run Down the City - Monica",
+      "artist": "Shashwat Sachdev",
+      "mbid": "a2bdf463-447c-4b25-9131-54dfd2489872",
+      "artist_mbid": "26da2fd6-329a-4b0a-b5c2-35e73eaa36fc",
+      "release": "Dhurandhar",
+      "year": 2025,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Party Mashup (By DJ NYK)",
+      "artist": "Rashmeet Kaur",
+      "mbid": "3daff24a-5e8c-419b-94b8-51ea91475aaa",
+      "artist_mbid": "02be9935-6058-407f-8115-0fbae9d4f6db",
+      "release": "Party Mashup (By DJ NYK)",
+      "year": 2021,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Who’s That Girl",
+      "artist": "Ikka",
+      "mbid": "3f405ba4-4ce8-4f41-b50f-a8499e48379b",
+      "artist_mbid": "b2a50198-9d28-40d9-a223-6d862ed9e005",
+      "release": "Only Love Gets Reply",
+      "year": 2024,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Finito",
+      "artist": "Ikka",
+      "mbid": "2cee8c56-7d6a-4e29-b0a7-99e9375bc8ee",
+      "artist_mbid": "b2a50198-9d28-40d9-a223-6d862ed9e005",
+      "release": "Amavas",
+      "year": 2019,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Khat",
+      "artist": "Ikka",
+      "mbid": "39a439f3-5d9f-42f8-8065-8694618d4c05",
+      "artist_mbid": "b2a50198-9d28-40d9-a223-6d862ed9e005",
+      "release": "Guru Randhawa (At Its Best)",
+      "year": 2018,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Kapoor & Sons Mashup (By DJ Chetas) [From \"Kapoor & Sons (Since 1921)\"]",
+      "artist": "Nucleya",
+      "mbid": "5347e85f-2765-4f3e-a8b2-9db354bd0187",
+      "artist_mbid": "80b5200c-0322-47b2-8237-b157c5f5d095",
+      "release": "Kapoor & Sons Mashup (By DJ Chetas)",
+      "year": 2016,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "We Dem Deeper Boyz (Steven Montana Edit)",
+      "artist": "KSHMR",
+      "mbid": "0ecdcec5-bfb5-4da9-a491-bb648870583d",
+      "artist_mbid": "333cf594-2b90-429f-88f4-a93e6c64cbeb",
+      "release": null,
+      "year": 0,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Astral Storm (Khwaabon Ka Dariya)",
+      "artist": "Shashwat Sachdev",
+      "mbid": "368f2f6e-fc22-4504-82cc-eff5353210de",
+      "artist_mbid": "26da2fd6-329a-4b0a-b5c2-35e73eaa36fc",
+      "release": "The Indian Odyssey",
+      "year": 2025,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Dua",
+      "artist": "Shashwat Sachdev",
+      "mbid": "5ef7e7b1-c997-4d1f-9fc2-d03fec7c9935",
+      "artist_mbid": "26da2fd6-329a-4b0a-b5c2-35e73eaa36fc",
+      "release": "Article 370",
+      "year": 2024,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Clouds",
+      "artist": "KSHMR",
+      "mbid": "e2f86cfe-cf8a-4d2a-9e0a-c5d7a9924895",
+      "artist_mbid": "333cf594-2b90-429f-88f4-a93e6c64cbeb",
+      "release": "Certified Clubtapes, Vol. 10",
+      "year": 2015,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    },
+    {
+      "song": "Nadiyon Paar (Let the Music Play Again)",
+      "artist": "Rashmeet Kaur",
+      "mbid": "859e9310-bc5d-4845-bbb7-f114002844e4",
+      "artist_mbid": "02be9935-6058-407f-8115-0fbae9d4f6db",
+      "release": "Roohi",
+      "year": 2021,
+      "stage": 3,
+      "stage_name": "Collaborator Artists"
+    }
+  ]
+}
