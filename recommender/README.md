@@ -1,80 +1,172 @@
-# Recommender System
+# Recommender System (POC)
 
-A 4-stage music recommendation engine that builds a personalized playlist by querying MusicBrainz for genre tags, release eras, language metadata, artist collaboration graphs, and similar-user listening patterns.
+This is a **4-stage music recommendation proof-of-concept** I built to experiment with personalized playlist generation using **ListenBrainz listening data** and **MusicBrainz metadata**.
+The goal wasn’t to train a black-box model, but to see how far you can go with **structured signals** like tags, eras, collaborations, and user similarity — and to keep every step inspectable and debuggable.
 
 ## Data Source
 
-The listening data used for this run comes from the ListenBrainz user **holycow23** and covers the month of **January 2026**. The dataset contains **414 listens** spanning **74 distinct artists** and **118 unique recordings**. The listening profile skews heavily toward **Indian hip-hop/rap** (Seedhe Maut, KR$NA, Raftaar, DIVINE, Badshah) and **English rock classics** (Led Zeppelin, Red Hot Chili Peppers), with the top detected genres being hip hop, rock, heavy metal, hard rock, pop rock, metal, and rap.
+For this run, I used listens from the ListenBrainz user **holycow23**, covering **January 2026**.
 
-## How It Works
+* **414 listens**
+* **74 artists**
+* **118 unique recordings**
 
-The first three stages share a common foundation: user listens are loaded from `songs.jsonl`, a genre/tag profile is built by querying MusicBrainz for recording-level, release-level, release-group-level, and artist-level tags, and an era histogram is constructed from release years. Genres are bucketed into three affinity tiers -- **primary** (top 20% of cumulative tag weight), **secondary** (20-50%), and **exploration** (the rest) -- and each candidate song is scored against these tiers using configurable weights.
+The listening history is dominated by **Indian hip-hop / rap** (Seedhe Maut, KR$NA, Raftaar, DIVINE, Badshah), with a strong secondary cluster of **English rock classics** (Red Hot Chili Peppers, Led Zeppelin).
+When I built the tag profile from MusicBrainz, the strongest genres that emerged were **hip hop, rap, rock, hard rock, heavy metal, metal, and pop rock** — which aligned well with what you’d expect from the raw listens.
 
-### Stage 1 -- Top Artists
+## Core Idea
 
-**Goal:** Surface unheard deep cuts from the artists you already love the most.
+All stages share the same foundation:
 
-The algorithm identifies the user's **top 5 artists by listen count** and fetches their full discographies from MusicBrainz. Every recording the user has already heard is excluded. The remaining candidates are scored using:
+1. Load user listens from `songs.jsonl`
+2. Build a **genre/tag profile** by querying MusicBrainz at multiple levels:
 
-- **Genre affinity** -- primary-genre tag matches contribute 40 points each, secondary 15, exploration 5.
-- **Era preference** -- a normalized score (max 30 points) based on how well the song's release decade aligns with the decades the user listens to most, with half-credit for adjacent decades.
+   * recording
+   * release
+   * release-group
+   * artist
+3. Build an **era histogram** from release years
+4. Score candidate tracks based on:
 
-Songs are selected per-artist (5 per artist), preferring those with primary-genre matches first, then secondary, then the rest.
+   * how well they match the user’s genre profile
+   * how well their release era aligns with what the user listens to
 
-**What it achieved:** 25 songs were recommended across Seedhe Maut (173 listens), Sez on the Beat (74), Bawari Basanti (71), KR$NA (65), and King (16). Top picks included "We Are The Ones" by King (score 115.0) and "No Enema" by Seedhe Maut/Sez on the Beat (score 80.0), both surfaced because of strong hip-hop primary-genre matches and era alignment with the user's 2020s-heavy listening.
+To keep things simple and interpretable, I bucket genres into three tiers:
 
-### Stage 2 -- Next Artists
+* **Primary** – top ~20% of cumulative tag weight
+* **Secondary** – next ~30%
+* **Exploration** – everything else
 
-**Goal:** Broaden the playlist by pulling from artists the user listens to occasionally (ranked 6th-20th), pushing discovery a bit further from the comfort zone while still staying genre-relevant.
+These tiers are reused across all stages so the behavior stays consistent.
 
-The algorithm takes artists ranked **6 through 20** by listen count and fetches their discographies. Artist-level tags are additionally layered onto candidate recordings (on top of recording and release tags) to improve scoring for artists with sparser MusicBrainz metadata. Recordings already heard *and* those already recommended in Stage 1 are excluded. Scoring uses the same genre-affinity + era formula as Stage 1. The global top 25 candidates are selected, capped at 3 per artist to ensure variety.
+---
 
-**What it achieved:** 25 songs were recommended. The rock classics dominated the top of the list -- Red Hot Chili Peppers' "Scar Tissue" (score 785.0), "Road Trippin'" (775.0), and "Under the Bridge" (775.0) scored extremely high because they matched nearly every primary and secondary genre tag in the user's profile (rock, pop rock, hard rock, etc.) and landed squarely in the user's preferred era. Led Zeppelin tracks like "Bron-Yr-Aur Stomp" and "Dazed and Confused" followed close behind (515.0). Mid-tier Indian artists like DIVINE ("Traffic Jam", 150.0), AP Dhillon ("Toxic", 120.0), Karan Aujla ("Tell Me", 115.0), and Anuv Jain ("Afsos", 100.0) filled out the list with strong hip-hop and pop matches.
+## Stage 1 — Top Artists
 
-### Stage 3 -- Collaborator Artists
+**Goal:**
+Find *new* songs from the artists the user already listens to the most.
 
-**Goal:** Introduce entirely new artists the user has never listened to by following the collaboration graph -- if Artist A and Artist B (whom the user likes) both worked with Artist C, then Artist C is probably worth exploring.
+I take the **top 5 artists by listen count**, pull their full discographies from MusicBrainz, and remove anything the user has already heard.
 
-The algorithm discovers collaborators by scanning MusicBrainz artist credits for shared recordings across the user's **top 15 artists**. A collaborator must be connected to at least **2 different** user artists to qualify (the "breadth" threshold), which filters out one-off features. The user's top 20 artists are excluded so the results are genuinely new. Scoring adds three new dimensions on top of genre and era:
+Each remaining recording is scored using:
 
-- **Collaboration breadth** (max 20 points) -- how many of the user's artists this collaborator has worked with, normalized.
-- **Collaboration depth** (max 15 points) -- total number of co-credited recordings across all connections, normalized.
-- **Language match** (max 15 points) -- how well the candidate recording's language (from MusicBrainz work/release language metadata) matches the user's language listening profile.
+* **Genre affinity**
 
-The global top 25 are selected, capped at 3 per collaborator artist.
+  * Primary tag match: +40
+  * Secondary: +15
+  * Exploration: +5
+* **Era preference**
 
-**What it achieved:** 14 qualifying collaborators were discovered, and 25 songs were recommended. Foreign Beggars topped the list with "Mind's Eye" (score 209.7), connected via both Seedhe Maut and Sez on the Beat, benefiting from strong genre overlap and collaboration signals. Neha Kakkar appeared via Raftaar and Badshah connections ("Hauli Hauli", 158.3). KSHMR surfaced through 3 connections (KR$NA, Seedhe Maut, King), contributing "Echo" (132.6). Jonita Gandhi, linked via DIVINE, Karan Aujla, and Badshah, brought in Bollywood-crossover picks. Ikka appeared through KR$NA, Sez on the Beat, and Karan Aujla. The stage successfully introduced artists from adjacent scenes -- UK bass music (Foreign Beggars), EDM (KSHMR, Nucleya), Bollywood playback (Jonita Gandhi, Payal Dev, Shashwat Sachdev), and underground rap (Talhah Yunus, Rashmeet Kaur).
+  * Up to +30 points depending on how closely the song’s release decade matches the user’s dominant listening decades
+  * Adjacent decades get partial credit
 
-### Stage 4 -- Similar Users (Not Yet Implemented)
+From each artist, I pick **5 tracks**, prioritizing primary-genre matches first so the recommendations feel familiar rather than random.
 
-**Goal:** Recommend the most popular songs among ListenBrainz users whose taste closely resembles yours -- a collaborative-filtering approach that surfaces tracks the user's "taste neighbors" love but the user hasn't heard yet.
+**Result:**
+25 songs total, spread across Seedhe Maut, Sez on the Beat, Bawari Basanti, KR$NA, and King.
+Tracks like *“We Are The Ones”* (King) and *“No Enema”* (Seedhe Maut / Sez on the Beat) surfaced mainly because they sat squarely in the user’s dominant hip-hop profile and matched the 2020s-heavy era preference.
 
-The planned algorithm would work as follows:
+---
 
-1. **Find similar users** -- query the ListenBrainz similar-users dataset to identify users with the highest taste overlap with holycow23, based on shared artist and recording listening patterns.
-2. **Aggregate their top tracks** -- collect the most frequently listened recordings across those similar users, weighted by how similar each user is.
-3. **Filter and score** -- exclude everything the user has already heard and everything recommended in Stages 1-3, then rank the remaining candidates by popularity-among-similar-users, optionally boosted by the same genre-affinity and era signals used in earlier stages.
-4. **Select top N** -- pick the final set of songs, capped per artist to maintain variety.
+## Stage 2 — Next Artists
 
-This stage was not implemented or tested because the similar-users data is not available in the local MusicBrainz database -- it lives on ListenBrainz's production infrastructure and would require either API access or a local dump of the similarity matrix. Once that data is available, the stage would be added as `stage4_similar_users.py` and wired into `run.py` alongside the existing three stages.
+**Goal:**
+Push discovery slightly beyond the core favorites without jumping too far.
+
+Here I look at artists ranked **6th to 20th** by listen count. These are artists the user clearly likes, just not obsessively.
+
+The flow is similar to Stage 1, with two differences:
+
+* **Artist-level tags** are added to compensate for sparse recording-level metadata
+* Anything already recommended in Stage 1 is excluded
+
+I score everything the same way, then take the **global top 25**, capped at **3 tracks per artist** to avoid one artist dominating the list.
+
+**Result:**
+Rock classics floated to the top very aggressively — Red Hot Chili Peppers tracks like *“Scar Tissue”*, *“Road Trippin’”*, and *“Under the Bridge”* scored extremely high because they matched almost every primary and secondary genre tag *and* landed perfectly in the user’s preferred era.
+
+Led Zeppelin followed close behind, with Indian artists like DIVINE, AP Dhillon, Karan Aujla, and Anuv Jain filling out the rest of the list.
+This stage ended up feeling like a very clean “you already like this vibe, here’s more of it” expansion.
+
+---
+
+## Stage 3 — Collaborator Artists
+
+**Goal:**
+Introduce **entirely new artists** using collaboration signals rather than tags alone.
+
+For the user’s **top 15 artists**, I scan MusicBrainz artist credits to find collaborators.
+To avoid one-off features, a collaborator has to be connected to **at least two different** user artists.
+All of the user’s top 20 artists are excluded so the results are genuinely new.
+
+On top of genre and era scoring, I add:
+
+* **Collaboration breadth** (max 20)
+  – how many of the user’s artists this collaborator has worked with
+* **Collaboration depth** (max 15)
+  – how many total co-credited recordings exist
+* **Language match** (max 15)
+  – how well the track’s language matches the user’s listening history
+
+I then select the **top 25**, capped at 3 per collaborator.
+
+**Result:**
+This stage produced some of the most interesting discoveries.
+
+Foreign Beggars surfaced via both Seedhe Maut and Sez on the Beat.
+KSHMR appeared through three different connections (KR$NA, Seedhe Maut, King).
+Jonita Gandhi, Ikka, Nucleya, Talhah Yunus, and others came in through overlapping collaboration paths.
+
+The list ended up spanning UK bass, EDM, Bollywood playback, and underground rap — all adjacent to the user’s taste, but not something tag-only matching would easily surface.
+
+---
+
+## Stage 4 — Similar Users (Planned)
+
+**Goal:**
+Use collaborative filtering to surface tracks popular among users with similar taste.
+
+This stage isn’t implemented yet because **similar-user data lives on ListenBrainz infrastructure**, not in the local MusicBrainz database.
+
+The planned approach:
+
+1. Find users with high taste overlap
+2. Aggregate their most-listened tracks
+3. Exclude everything already heard or recommended
+4. Rank by popularity among similar users, optionally boosted by genre/era signals
+
+Once the data is available, this will be added as `stage4_similar_users.py` and plugged into the existing pipeline.
+
+---
 
 ## Output
 
-Running `python3 run.py` currently executes Stages 1-3 sequentially, merges the results, and writes a single `recommendations.json` containing 75 songs with full metadata (MBIDs, tags, scores, collaboration paths). Individual stage files are cleaned up after the merge. Once Stage 4 is implemented, it will be included in the merge and the total count will increase accordingly.
+Running:
+
+```bash
+python3 run.py
+```
+
+Executes Stages 1–3, merges the results, and produces a single `recommendations.json` containing **75 tracks** with full metadata, scores, and (for Stage 3) collaboration paths.
+Intermediate stage files are cleaned up after the merge.
+
+---
 
 ## Configuration
 
-All tunable parameters (scoring weights, artist counts, song limits, database URI) live in `settings.py`.
+All scoring weights, artist limits, and database settings live in `settings.py`, so it’s easy to tweak behavior without touching the core logic.
 
-## File Overview
+---
 
-| File | Purpose |
-|---|---|
-| `run.py` | Orchestrator -- runs all stages and merges output |
-| `stage1_top_artists.py` | Stage 1 algorithm |
-| `stage2_next_artists.py` | Stage 2 algorithm |
-| `stage3_collab_artists.py` | Stage 3 algorithm |
-| `stage4_similar_users.py` | Stage 4 algorithm (planned, not yet implemented) |
-| `common.py` | Shared DB queries, tag fetching, profile building |
-| `settings.py` | Configuration constants |
-| `songs.jsonl` | Input listens (holycow23, January 2026) |
+## Why this approach
+
+This POC is intentionally:
+
+* **Explainable** – every score can be traced
+* **Debbugable** – no opaque embeddings or training loops
+* **Composable** – each stage can evolve independently
+
+It’s meant as a foundation that can later be:
+
+* moved into **Troi**
+* combined with **ListenBrainz radio**
