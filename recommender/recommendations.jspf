@@ -1,0 +1,1695 @@
+{
+  "playlist": {
+    "title": "Recommender System Output",
+    "creator": "ListenBrainz Recommender POC",
+    "date": "2026-02-08T11:17:38.272914+00:00",
+    "annotation": "75 recommendations across 3 stages. Each track's annotation contains the recommendation reason.",
+    "track": [
+      {
+        "title": "No Enema",
+        "creator": "Seedhe Maut",
+        "identifier": [
+          "https://musicbrainz.org/recording/57588b26-adeb-4237-9638-fc6381fd2328"
+        ],
+        "annotation": "Stage 1: Top Artist (Seedhe Maut)",
+        "album": "No Enema",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/485f576c-6ade-4c0f-9406-34720f15fb02"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Seedhe Maut)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Kehne Do (feat. Bhaskar & Lil Bhavi)",
+        "creator": "Seedhe Maut",
+        "identifier": [
+          "https://musicbrainz.org/recording/03b4a166-3fc8-4ae1-aca0-6268313c2337"
+        ],
+        "annotation": "Stage 1: Top Artist (Seedhe Maut)",
+        "album": "DL91 FM",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/485f576c-6ade-4c0f-9406-34720f15fb02"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Seedhe Maut)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "MP3",
+        "creator": "Seedhe Maut",
+        "identifier": [
+          "https://musicbrainz.org/recording/03d9b406-7507-412b-a8be-82082ace5ee4"
+        ],
+        "annotation": "Stage 1: Top Artist (Seedhe Maut)",
+        "album": "DL91 FM",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/485f576c-6ade-4c0f-9406-34720f15fb02"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Seedhe Maut)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Pickup (feat. OG Lucifer)",
+        "creator": "Seedhe Maut",
+        "identifier": [
+          "https://musicbrainz.org/recording/0ed44950-2ffd-4d58-9050-4b80c0120a4e"
+        ],
+        "annotation": "Stage 1: Top Artist (Seedhe Maut)",
+        "album": "DL91 FM",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/485f576c-6ade-4c0f-9406-34720f15fb02"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Seedhe Maut)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Abaad (feat. Encore ABJ & Ghaatak)",
+        "creator": "Seedhe Maut",
+        "identifier": [
+          "https://musicbrainz.org/recording/18effa1e-8a01-488b-ad4b-5cf15d475395"
+        ],
+        "annotation": "Stage 1: Top Artist (Seedhe Maut)",
+        "album": "DL91 FM",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/485f576c-6ade-4c0f-9406-34720f15fb02"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Seedhe Maut)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "No Enema",
+        "creator": "Sez on the Beat",
+        "identifier": [
+          "https://musicbrainz.org/recording/57588b26-adeb-4237-9638-fc6381fd2328"
+        ],
+        "annotation": "Stage 1: Top Artist (Sez on the Beat)",
+        "album": "No Enema",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Sez on the Beat)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "KKR",
+        "creator": "Sez on the Beat",
+        "identifier": [
+          "https://musicbrainz.org/recording/451e4ab6-4522-4d42-90af-66cba457d5f3"
+        ],
+        "annotation": "Stage 1: Top Artist (Sez on the Beat)",
+        "album": "Rum, Racks & Roses",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Sez on the Beat)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Kaleshi Launde",
+        "creator": "Sez on the Beat",
+        "identifier": [
+          "https://musicbrainz.org/recording/aaafbc12-bbaa-4d09-91a6-9459a6513b56"
+        ],
+        "annotation": "Stage 1: Top Artist (Sez on the Beat)",
+        "album": "Rum, Racks & Roses",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Sez on the Beat)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "REAL SHIT - Raftaar",
+        "creator": "Sez on the Beat",
+        "identifier": [
+          "https://musicbrainz.org/recording/c52db11e-49c2-417a-83ed-b1a34775ad78"
+        ],
+        "annotation": "Stage 1: Top Artist (Sez on the Beat)",
+        "album": "HARD DRIVE Vol. 2",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Sez on the Beat)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Nayaab",
+        "creator": "Sez on the Beat",
+        "identifier": [
+          "https://musicbrainz.org/recording/05f76581-7b85-41aa-9e7e-68e14e50c7b2"
+        ],
+        "annotation": "Stage 1: Top Artist (Sez on the Beat)",
+        "album": "Nayaab",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/6d73e2b1-60c1-4456-a854-ccbfb5a9ddaa"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Sez on the Beat)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Nacho (extended mix)",
+        "creator": "Bawari Basanti",
+        "identifier": [
+          "https://musicbrainz.org/recording/566450d0-1db3-419d-94da-3b278be130e7"
+        ],
+        "annotation": "Stage 1: Top Artist (Bawari Basanti)",
+        "album": "Gaya EP",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/f5e2f4d1-056c-46b1-b8ee-af54663f14bf"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Bawari Basanti)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Nacho",
+        "creator": "Bawari Basanti",
+        "identifier": [
+          "https://musicbrainz.org/recording/9f2b2aac-c022-47bc-8896-ec41e0bc561e"
+        ],
+        "annotation": "Stage 1: Top Artist (Bawari Basanti)",
+        "album": "Gaya EP",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/f5e2f4d1-056c-46b1-b8ee-af54663f14bf"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Bawari Basanti)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Moksha",
+        "creator": "Bawari Basanti",
+        "identifier": [
+          "https://musicbrainz.org/recording/bca16900-f41d-4c05-8472-18741d0f10e9"
+        ],
+        "annotation": "Stage 1: Top Artist (Bawari Basanti)",
+        "album": "Orient Dub Mix #2",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/f5e2f4d1-056c-46b1-b8ee-af54663f14bf"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Bawari Basanti)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Mumbai Gyal",
+        "creator": "Bawari Basanti",
+        "identifier": [
+          "https://musicbrainz.org/recording/543cff9f-54b2-472c-b0e4-6556946ad5f9"
+        ],
+        "annotation": "Stage 1: Top Artist (Bawari Basanti)",
+        "album": "Indian Gyal Riddim",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/f5e2f4d1-056c-46b1-b8ee-af54663f14bf"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Bawari Basanti)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Pallo Latke",
+        "creator": "Bawari Basanti",
+        "identifier": [
+          "https://musicbrainz.org/recording/037501ba-4d72-455f-b27e-225dfbe4afaf"
+        ],
+        "annotation": "Stage 1: Top Artist (Bawari Basanti)",
+        "album": "Rainbow Rishta (Original Series Soundtrack)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/f5e2f4d1-056c-46b1-b8ee-af54663f14bf"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (Bawari Basanti)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Who You Are",
+        "creator": "KR$NA",
+        "identifier": [
+          "https://musicbrainz.org/recording/881afefa-05a3-46f0-b7bd-b7de6f983c8d"
+        ],
+        "annotation": "Stage 1: Top Artist (KR$NA)",
+        "album": "Yours Truly",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/86ba68eb-ea24-4e78-a009-b35e99cb6193"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (KR$NA)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Playground",
+        "creator": "KR$NA",
+        "identifier": [
+          "https://musicbrainz.org/recording/a505c712-749c-438b-bb17-b38432e7170c"
+        ],
+        "annotation": "Stage 1: Top Artist (KR$NA)",
+        "album": "Playground",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/86ba68eb-ea24-4e78-a009-b35e99cb6193"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (KR$NA)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Koi Lauta De Mere Beete Huye Din",
+        "creator": "KR$NA",
+        "identifier": [
+          "https://musicbrainz.org/recording/0f2831fc-0f47-4077-8d4c-aec086943ba7"
+        ],
+        "annotation": "Stage 1: Top Artist (KR$NA)",
+        "album": "One Man Many Roles - Kishore Kumar",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/86ba68eb-ea24-4e78-a009-b35e99cb6193"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (KR$NA)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Koi Lauta De Mere Beete Huye Din (Revival)",
+        "creator": "KR$NA",
+        "identifier": [
+          "https://musicbrainz.org/recording/6bf1ae19-8441-4189-af1e-85d4e2a78c34"
+        ],
+        "annotation": "Stage 1: Top Artist (KR$NA)",
+        "album": "Door Gagan Ki Chhaon Mein",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/86ba68eb-ea24-4e78-a009-b35e99cb6193"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (KR$NA)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Role Model",
+        "creator": "KR$NA",
+        "identifier": [
+          "https://musicbrainz.org/recording/2030b339-47fa-4058-a145-db07dffbcdb0"
+        ],
+        "annotation": "Stage 1: Top Artist (KR$NA)",
+        "album": "For the Day One$",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/86ba68eb-ea24-4e78-a009-b35e99cb6193"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (KR$NA)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Bumpa",
+        "creator": "King",
+        "identifier": [
+          "https://musicbrainz.org/recording/787b7eac-bcb7-4866-9603-b3178d360579"
+        ],
+        "annotation": "Stage 1: Top Artist (King)",
+        "album": "Bumpa",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/bda9891c-f6a4-442b-8f1c-65429c3347d8"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (King)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "We Are The Ones",
+        "creator": "King",
+        "identifier": [
+          "https://musicbrainz.org/recording/1a977e53-7d63-46ba-8d55-7e8f5fa57c67"
+        ],
+        "annotation": "Stage 1: Top Artist (King)",
+        "album": "NEW LIFE",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/bda9891c-f6a4-442b-8f1c-65429c3347d8"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (King)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "BAWE MAIN CHECK",
+        "creator": "King",
+        "identifier": [
+          "https://musicbrainz.org/recording/6892c32b-62c9-4d1c-964c-0c7817c5fc35"
+        ],
+        "annotation": "Stage 1: Top Artist (King)",
+        "album": "MONOPOLY MOVES",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/bda9891c-f6a4-442b-8f1c-65429c3347d8"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (King)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Doob Ja",
+        "creator": "King",
+        "identifier": [
+          "https://musicbrainz.org/recording/68558baf-3f48-498e-974f-4a6fac497fe9"
+        ],
+        "annotation": "Stage 1: Top Artist (King)",
+        "album": "Bhoomi 2022",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/bda9891c-f6a4-442b-8f1c-65429c3347d8"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (King)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Story of a Bird",
+        "creator": "King",
+        "identifier": [
+          "https://musicbrainz.org/recording/b98822fa-4f4f-48bd-ba27-abfd05628000"
+        ],
+        "annotation": "Stage 1: Top Artist (King)",
+        "album": "Story of a Bird",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/bda9891c-f6a4-442b-8f1c-65429c3347d8"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 1: Top Artist (King)",
+              "stage": 1,
+              "stage_name": "Top Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Scar Tissue",
+        "creator": "Red Hot Chili Peppers",
+        "identifier": [
+          "https://musicbrainz.org/recording/eb612418-2d98-49af-9fdf-64362326632b"
+        ],
+        "annotation": "Stage 2: Next Artist (Red Hot Chili Peppers)",
+        "album": "Californication",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/8bfac288-ccc5-448d-9573-c33ea2aa5c30"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Red Hot Chili Peppers)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Road Trippin’",
+        "creator": "Red Hot Chili Peppers",
+        "identifier": [
+          "https://musicbrainz.org/recording/b8bc05b2-0bb3-46a1-b830-62187e7657e1"
+        ],
+        "annotation": "Stage 2: Next Artist (Red Hot Chili Peppers)",
+        "album": "Meditation - Unplugged - Calm - Acoustic - Soft",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/8bfac288-ccc5-448d-9573-c33ea2aa5c30"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Red Hot Chili Peppers)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Under the Bridge",
+        "creator": "Red Hot Chili Peppers",
+        "identifier": [
+          "https://musicbrainz.org/recording/10d1062a-7275-458f-ad0d-906eeaa22c57"
+        ],
+        "annotation": "Stage 2: Next Artist (Red Hot Chili Peppers)",
+        "album": "Playing – The 90s",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/8bfac288-ccc5-448d-9573-c33ea2aa5c30"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Red Hot Chili Peppers)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Five Years / When the Levee Breaks / Hot and Nasty",
+        "creator": "Led Zeppelin",
+        "identifier": [
+          "https://musicbrainz.org/recording/463ac14b-6388-414b-bf2b-bb5ef4c187fa"
+        ],
+        "annotation": "Stage 2: Next Artist (Led Zeppelin)",
+        "album": "All the Breaks: The 300 Most Essential Drum Breaks of All Time",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Led Zeppelin)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Bron‐Yr‐Aur Stomp",
+        "creator": "Led Zeppelin",
+        "identifier": [
+          "https://musicbrainz.org/recording/3cb9fc23-e3b0-4c56-8936-0aaa4973e8e7"
+        ],
+        "annotation": "Stage 2: Next Artist (Led Zeppelin)",
+        "album": "Thulemann Box: The Complete Album Collection 1969-1982",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Led Zeppelin)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Dazed and Confused",
+        "creator": "Led Zeppelin",
+        "identifier": [
+          "https://musicbrainz.org/recording/553510ce-68dd-4e85-9e8c-eafb23d43bab"
+        ],
+        "annotation": "Stage 2: Next Artist (Led Zeppelin)",
+        "album": "Thulemann Box: The Complete Album Collection 1969-1982",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Led Zeppelin)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "9Xm House of Dance-Dj Shilpi Sharma-Vol.1",
+        "creator": "Badshah",
+        "identifier": [
+          "https://musicbrainz.org/recording/56d0a3f9-aef2-498e-9076-f43a8041fb89"
+        ],
+        "annotation": "Stage 2: Next Artist (Badshah)",
+        "album": "9Xm House of Dance - Vol.1",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/cd67b8c8-8b2f-4d56-b564-fbd837490256"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Badshah)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Traffic Jam",
+        "creator": "DIVINE",
+        "identifier": [
+          "https://musicbrainz.org/recording/8c8abddd-a8bc-46a6-b3dc-199b7553e44f"
+        ],
+        "annotation": "Stage 2: Next Artist (DIVINE)",
+        "album": "Gunehgar",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/a4a6a48a-42a5-493a-9fa1-aaf6a82217e2"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (DIVINE)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Voodoo",
+        "creator": "Badshah",
+        "identifier": [
+          "https://musicbrainz.org/recording/f064a401-8370-4621-baa6-87eff10e0521"
+        ],
+        "annotation": "Stage 2: Next Artist (Badshah)",
+        "album": "Voodoo",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/cd67b8c8-8b2f-4d56-b564-fbd837490256"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Badshah)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Toxic",
+        "creator": "AP Dhillon",
+        "identifier": [
+          "https://musicbrainz.org/recording/1f732c8b-76c9-454b-9e2e-d205507d0b81"
+        ],
+        "annotation": "Stage 2: Next Artist (AP Dhillon)",
+        "album": "Toxic",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/ed29f721-0d40-4a90-9f25-a91c2ccccd5e"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (AP Dhillon)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Baazigar",
+        "creator": "DIVINE",
+        "identifier": [
+          "https://musicbrainz.org/recording/665b1374-20ef-47e8-a726-7b542cf98afb"
+        ],
+        "annotation": "Stage 2: Next Artist (DIVINE)",
+        "album": "Gunehgar",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/a4a6a48a-42a5-493a-9fa1-aaf6a82217e2"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (DIVINE)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Bando Diaries (remix)",
+        "creator": "DIVINE",
+        "identifier": [
+          "https://musicbrainz.org/recording/73c9bd1d-46ac-4127-85b4-f751629db544"
+        ],
+        "annotation": "Stage 2: Next Artist (DIVINE)",
+        "album": "Bando Diaries (remix)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/a4a6a48a-42a5-493a-9fa1-aaf6a82217e2"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (DIVINE)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Problems Over Peace",
+        "creator": "AP Dhillon",
+        "identifier": [
+          "https://musicbrainz.org/recording/79c9e4bc-1a23-49a7-a4ab-244bc9c9cfaf"
+        ],
+        "annotation": "Stage 2: Next Artist (AP Dhillon)",
+        "album": "Problems Over Peace",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/ed29f721-0d40-4a90-9f25-a91c2ccccd5e"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (AP Dhillon)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Tell Me",
+        "creator": "Karan Aujla",
+        "identifier": [
+          "https://musicbrainz.org/recording/015149ef-5a8c-43af-a2fd-9c7a67212a38"
+        ],
+        "annotation": "Stage 2: Next Artist (Karan Aujla)",
+        "album": "Tell Me",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/4a779683-5404-4b90-a0d7-242495158265"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Karan Aujla)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Gangsta",
+        "creator": "Karan Aujla",
+        "identifier": [
+          "https://musicbrainz.org/recording/64fd714a-9862-4e39-b19d-a485801ae2bc"
+        ],
+        "annotation": "Stage 2: Next Artist (Karan Aujla)",
+        "album": "Way Ahead",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/4a779683-5404-4b90-a0d7-242495158265"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Karan Aujla)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "9XM Smashup # 8888 (DJ Ashmit Patel & DJ Ishq Bector)",
+        "creator": "Badshah",
+        "identifier": [
+          "https://musicbrainz.org/recording/573166ac-14c2-486b-b118-01ed9b8d3750"
+        ],
+        "annotation": "Stage 2: Next Artist (Badshah)",
+        "album": "9XM Smashup # 8888",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/cd67b8c8-8b2f-4d56-b564-fbd837490256"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Badshah)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Afsos",
+        "creator": "Anuv Jain",
+        "identifier": [
+          "https://musicbrainz.org/recording/bd9d3b90-5ed1-4265-9b2d-3e318260e76b"
+        ],
+        "annotation": "Stage 2: Next Artist (Anuv Jain)",
+        "album": "Afsos",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/addca31a-40ae-4152-afb8-a477da5191f0"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Anuv Jain)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Afsos",
+        "creator": "AP Dhillon",
+        "identifier": [
+          "https://musicbrainz.org/recording/bd9d3b90-5ed1-4265-9b2d-3e318260e76b"
+        ],
+        "annotation": "Stage 2: Next Artist (AP Dhillon)",
+        "album": "Afsos",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/ed29f721-0d40-4a90-9f25-a91c2ccccd5e"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (AP Dhillon)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Alag Aasmaan",
+        "creator": "Anuv Jain",
+        "identifier": [
+          "https://musicbrainz.org/recording/6e0a1dff-fe1f-4c9d-8589-2720fe9845b6"
+        ],
+        "annotation": "Stage 2: Next Artist (Anuv Jain)",
+        "album": "Alag Aasmaan",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/addca31a-40ae-4152-afb8-a477da5191f0"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Anuv Jain)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Antariksh",
+        "creator": "Anuv Jain",
+        "identifier": [
+          "https://musicbrainz.org/recording/d649b35c-6036-47ab-af91-ecb1cc71130b"
+        ],
+        "annotation": "Stage 2: Next Artist (Anuv Jain)",
+        "album": "Antariksh",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/addca31a-40ae-4152-afb8-a477da5191f0"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Anuv Jain)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Tere Bin",
+        "creator": "Talwiinder",
+        "identifier": [
+          "https://musicbrainz.org/recording/7976b75a-d197-4587-98fa-1470b6f24c0d"
+        ],
+        "annotation": "Stage 2: Next Artist (Talwiinder)",
+        "album": "Misfit",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/2c8c0732-7b2d-4271-978b-f893467816b8"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Talwiinder)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "The Way You Look",
+        "creator": "Talwiinder",
+        "identifier": [
+          "https://musicbrainz.org/recording/9d0e85da-aa1c-46ac-a048-561b848daa19"
+        ],
+        "annotation": "Stage 2: Next Artist (Talwiinder)",
+        "album": "The Way You Look",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/2c8c0732-7b2d-4271-978b-f893467816b8"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Talwiinder)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "High on Me",
+        "creator": "Talwiinder",
+        "identifier": [
+          "https://musicbrainz.org/recording/4de2caac-f8a9-451c-87c0-5b8e82a64122"
+        ],
+        "annotation": "Stage 2: Next Artist (Talwiinder)",
+        "album": "Glory",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/2c8c0732-7b2d-4271-978b-f893467816b8"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Talwiinder)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Pagglait",
+        "creator": "Raftaar",
+        "identifier": [
+          "https://musicbrainz.org/recording/6f1e84eb-6991-41b9-ab27-fe8a8df509d5"
+        ],
+        "annotation": "Stage 2: Next Artist (Raftaar)",
+        "album": "Pagglait",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/f5f329bd-7fce-4b28-8208-440a96eeee91"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Raftaar)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "3 Shaukk",
+        "creator": "Karan Aujla",
+        "identifier": [
+          "https://musicbrainz.org/recording/401a2113-c3e2-4edb-8f48-730a4e284ae1"
+        ],
+        "annotation": "Stage 2: Next Artist (Karan Aujla)",
+        "album": "De De Pyaar De 2",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/4a779683-5404-4b90-a0d7-242495158265"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 2: Next Artist (Karan Aujla)",
+              "stage": 2,
+              "stage_name": "Next Artists"
+            }
+          }
+        }
+      },
+      {
+        "title": "Mind’s Eye",
+        "creator": "Foreign Beggars",
+        "identifier": [
+          "https://musicbrainz.org/recording/68d00539-2775-4441-a819-2a4e405e2ff6"
+        ],
+        "annotation": "Stage 3: Collaborator of Seedhe Maut, Sez on the Beat (Foreign Beggars)",
+        "album": "The Uprising",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/34dd3adc-f118-4106-bfac-71820a804f4c"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Seedhe Maut, Sez on the Beat (Foreign Beggars)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Seedhe Maut",
+                "Sez on the Beat"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Hold Tight / Let Me Think About It (a cappella) / Still Getting It",
+        "creator": "Foreign Beggars",
+        "identifier": [
+          "https://musicbrainz.org/recording/c477de4c-b63a-4078-b9ae-af7a2406b471"
+        ],
+        "annotation": "Stage 3: Collaborator of Seedhe Maut, Sez on the Beat (Foreign Beggars)",
+        "album": "Mash Up Mix: Bass 2012",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/34dd3adc-f118-4106-bfac-71820a804f4c"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Seedhe Maut, Sez on the Beat (Foreign Beggars)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Seedhe Maut",
+                "Sez on the Beat"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Fading Out",
+        "creator": "Foreign Beggars",
+        "identifier": [
+          "https://musicbrainz.org/recording/597b531b-80ec-40e2-a9a9-e0f57925c841"
+        ],
+        "annotation": "Stage 3: Collaborator of Seedhe Maut, Sez on the Beat (Foreign Beggars)",
+        "album": "Matriarchy",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/34dd3adc-f118-4106-bfac-71820a804f4c"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Seedhe Maut, Sez on the Beat (Foreign Beggars)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Seedhe Maut",
+                "Sez on the Beat"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Hauli Hauli",
+        "creator": "Neha Kakkar",
+        "identifier": [
+          "https://musicbrainz.org/recording/81046273-f641-42cc-ad24-9e063d03fa0d"
+        ],
+        "annotation": "Stage 3: Collaborator of Raftaar, Badshah (Neha Kakkar)",
+        "album": "Khel Khel Mein",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/9ac67cb4-c838-48ad-b28d-1ff2ae58b758"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Raftaar, Badshah (Neha Kakkar)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Raftaar",
+                "Badshah"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Echo",
+        "creator": "KSHMR",
+        "identifier": [
+          "https://musicbrainz.org/recording/64648d6a-04cf-4e67-8eca-b8a8ad0c846a"
+        ],
+        "annotation": "Stage 3: Collaborator of Seedhe Maut, KR$NA, King (KSHMR)",
+        "album": "Echo",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/333cf594-2b90-429f-88f4-a93e6c64cbeb"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Seedhe Maut, KR$NA, King (KSHMR)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Seedhe Maut",
+                "KR$NA",
+                "King"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Pov: Falling In Love (2022)",
+        "creator": "Jonita Gandhi",
+        "identifier": [
+          "https://musicbrainz.org/recording/2c0afa2c-fb3c-4b96-b459-50dee7089b9a"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, Badshah, DIVINE (Jonita Gandhi)",
+        "album": "Pov: Falling In Love (2022)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/32560f6d-f87f-4475-a6fb-7c302036aaf1"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, Badshah, DIVINE (Jonita Gandhi)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "Badshah",
+                "DIVINE"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Yaariyan Mashup",
+        "creator": "Neha Kakkar",
+        "identifier": [
+          "https://musicbrainz.org/recording/c928c5e3-a927-4de9-9e16-7379870c9bcf"
+        ],
+        "annotation": "Stage 3: Collaborator of Raftaar, Badshah (Neha Kakkar)",
+        "album": "Yaariyan",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/9ac67cb4-c838-48ad-b28d-1ff2ae58b758"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Raftaar, Badshah (Neha Kakkar)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Raftaar",
+                "Badshah"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Hai Halla",
+        "creator": "Payal Dev",
+        "identifier": [
+          "https://musicbrainz.org/recording/8354f896-38ef-4d2b-b4a5-e1f911ee6f04"
+        ],
+        "annotation": "Stage 3: Collaborator of Raftaar, Badshah (Payal Dev)",
+        "album": "Hai Halla",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/5b8bd2fd-7e18-4f93-81a6-a438580e0b59"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Raftaar, Badshah (Payal Dev)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Raftaar",
+                "Badshah"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Lipstick Laga Ke",
+        "creator": "Payal Dev",
+        "identifier": [
+          "https://musicbrainz.org/recording/376b49ba-e7ee-493b-83c6-cd529fd5dee7"
+        ],
+        "annotation": "Stage 3: Collaborator of Raftaar, Badshah (Payal Dev)",
+        "album": "Great Grand Masti",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/5b8bd2fd-7e18-4f93-81a6-a438580e0b59"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Raftaar, Badshah (Payal Dev)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Raftaar",
+                "Badshah"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Addicted (ਆਦੀ)",
+        "creator": "Jonita Gandhi",
+        "identifier": [
+          "https://musicbrainz.org/recording/8d31c89a-aead-47de-b417-cbfe3a07a27e"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, Badshah, DIVINE (Jonita Gandhi)",
+        "album": "Addicted (ਆਦੀ)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/32560f6d-f87f-4475-a6fb-7c302036aaf1"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, Badshah, DIVINE (Jonita Gandhi)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "Badshah",
+                "DIVINE"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Dil Banaane Waaleya",
+        "creator": "Jonita Gandhi",
+        "identifier": [
+          "https://musicbrainz.org/recording/29d10a58-5a4b-4995-9942-07a78f70bfdb"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, Badshah, DIVINE (Jonita Gandhi)",
+        "album": "Fighter",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/32560f6d-f87f-4475-a6fb-7c302036aaf1"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, Badshah, DIVINE (Jonita Gandhi)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "Badshah",
+                "DIVINE"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Kho Sa Gaya Hoon",
+        "creator": "Neha Kakkar",
+        "identifier": [
+          "https://musicbrainz.org/recording/3a3505eb-130f-42b8-b7af-e561e2feff5d"
+        ],
+        "annotation": "Stage 3: Collaborator of Raftaar, Badshah (Neha Kakkar)",
+        "album": "Yaariyan 2",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/9ac67cb4-c838-48ad-b28d-1ff2ae58b758"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Raftaar, Badshah (Neha Kakkar)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Raftaar",
+                "Badshah"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Yaad Reh Jaati Hai (From “The Buckingham Murders”)",
+        "creator": "Payal Dev",
+        "identifier": [
+          "https://musicbrainz.org/recording/5623a2ae-f72a-46a8-b7a0-35e203507bc6"
+        ],
+        "annotation": "Stage 3: Collaborator of Raftaar, Badshah (Payal Dev)",
+        "album": "The Buckingham Murders (Original Motion Picture Soundtrack)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/5b8bd2fd-7e18-4f93-81a6-a438580e0b59"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Raftaar, Badshah (Payal Dev)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Raftaar",
+                "Badshah"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Kobita",
+        "creator": "Nucleya",
+        "identifier": [
+          "https://musicbrainz.org/recording/d12f161d-4bfa-421c-a3d2-31339e201404"
+        ],
+        "annotation": "Stage 3: Collaborator of DIVINE, Ritviz (Nucleya)",
+        "album": "Bikash Weds Pinky: Amar Xopun",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/80b5200c-0322-47b2-8237-b157c5f5d095"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of DIVINE, Ritviz (Nucleya)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "DIVINE",
+                "Ritviz"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Run Down the City - Monica",
+        "creator": "Shashwat Sachdev",
+        "identifier": [
+          "https://musicbrainz.org/recording/a2bdf463-447c-4b25-9131-54dfd2489872"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, King (Shashwat Sachdev)",
+        "album": "Dhurandhar",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/26da2fd6-329a-4b0a-b5c2-35e73eaa36fc"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, King (Shashwat Sachdev)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "King"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Party Mashup (By DJ NYK)",
+        "creator": "Rashmeet Kaur",
+        "identifier": [
+          "https://musicbrainz.org/recording/3daff24a-5e8c-419b-94b8-51ea91475aaa"
+        ],
+        "annotation": "Stage 3: Collaborator of Raftaar, Seedhe Maut, KR$NA (Rashmeet Kaur)",
+        "album": "Party Mashup (By DJ NYK)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/02be9935-6058-407f-8115-0fbae9d4f6db"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Raftaar, Seedhe Maut, KR$NA (Rashmeet Kaur)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Raftaar",
+                "Seedhe Maut",
+                "KR$NA"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Who’s That Girl",
+        "creator": "Ikka",
+        "identifier": [
+          "https://musicbrainz.org/recording/3f405ba4-4ce8-4f41-b50f-a8499e48379b"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, Sez on the Beat, KR$NA (Ikka)",
+        "album": "Only Love Gets Reply",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/b2a50198-9d28-40d9-a223-6d862ed9e005"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, Sez on the Beat, KR$NA (Ikka)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "Sez on the Beat",
+                "KR$NA"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Finito",
+        "creator": "Ikka",
+        "identifier": [
+          "https://musicbrainz.org/recording/2cee8c56-7d6a-4e29-b0a7-99e9375bc8ee"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, Sez on the Beat, KR$NA (Ikka)",
+        "album": "Amavas",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/b2a50198-9d28-40d9-a223-6d862ed9e005"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, Sez on the Beat, KR$NA (Ikka)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "Sez on the Beat",
+                "KR$NA"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Khat",
+        "creator": "Ikka",
+        "identifier": [
+          "https://musicbrainz.org/recording/39a439f3-5d9f-42f8-8065-8694618d4c05"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, Sez on the Beat, KR$NA (Ikka)",
+        "album": "Guru Randhawa (At Its Best)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/b2a50198-9d28-40d9-a223-6d862ed9e005"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, Sez on the Beat, KR$NA (Ikka)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "Sez on the Beat",
+                "KR$NA"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Kapoor & Sons Mashup (By DJ Chetas) [From \"Kapoor & Sons (Since 1921)\"]",
+        "creator": "Nucleya",
+        "identifier": [
+          "https://musicbrainz.org/recording/5347e85f-2765-4f3e-a8b2-9db354bd0187"
+        ],
+        "annotation": "Stage 3: Collaborator of DIVINE, Ritviz (Nucleya)",
+        "album": "Kapoor & Sons Mashup (By DJ Chetas)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/80b5200c-0322-47b2-8237-b157c5f5d095"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of DIVINE, Ritviz (Nucleya)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "DIVINE",
+                "Ritviz"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "We Dem Deeper Boyz (Steven Montana Edit)",
+        "creator": "KSHMR",
+        "identifier": [
+          "https://musicbrainz.org/recording/0ecdcec5-bfb5-4da9-a491-bb648870583d"
+        ],
+        "annotation": "Stage 3: Collaborator of Seedhe Maut, KR$NA, King (KSHMR)",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/333cf594-2b90-429f-88f4-a93e6c64cbeb"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Seedhe Maut, KR$NA, King (KSHMR)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Seedhe Maut",
+                "KR$NA",
+                "King"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Astral Storm (Khwaabon Ka Dariya)",
+        "creator": "Shashwat Sachdev",
+        "identifier": [
+          "https://musicbrainz.org/recording/368f2f6e-fc22-4504-82cc-eff5353210de"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, King (Shashwat Sachdev)",
+        "album": "The Indian Odyssey",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/26da2fd6-329a-4b0a-b5c2-35e73eaa36fc"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, King (Shashwat Sachdev)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "King"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Dua",
+        "creator": "Shashwat Sachdev",
+        "identifier": [
+          "https://musicbrainz.org/recording/5ef7e7b1-c997-4d1f-9fc2-d03fec7c9935"
+        ],
+        "annotation": "Stage 3: Collaborator of Karan Aujla, King (Shashwat Sachdev)",
+        "album": "Article 370",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/26da2fd6-329a-4b0a-b5c2-35e73eaa36fc"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Karan Aujla, King (Shashwat Sachdev)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Karan Aujla",
+                "King"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Clouds",
+        "creator": "KSHMR",
+        "identifier": [
+          "https://musicbrainz.org/recording/e2f86cfe-cf8a-4d2a-9e0a-c5d7a9924895"
+        ],
+        "annotation": "Stage 3: Collaborator of Seedhe Maut, KR$NA, King (KSHMR)",
+        "album": "Certified Clubtapes, Vol. 10",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/333cf594-2b90-429f-88f4-a93e6c64cbeb"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Seedhe Maut, KR$NA, King (KSHMR)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Seedhe Maut",
+                "KR$NA",
+                "King"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Nadiyon Paar (Let the Music Play Again)",
+        "creator": "Rashmeet Kaur",
+        "identifier": [
+          "https://musicbrainz.org/recording/859e9310-bc5d-4845-bbb7-f114002844e4"
+        ],
+        "annotation": "Stage 3: Collaborator of Raftaar, Seedhe Maut, KR$NA (Rashmeet Kaur)",
+        "album": "Roohi",
+        "extension": {
+          "https://musicbrainz.org/doc/jspf#track": {
+            "artist_identifiers": [
+              "https://musicbrainz.org/artist/02be9935-6058-407f-8115-0fbae9d4f6db"
+            ],
+            "additional_metadata": {
+              "recommendation_reason": "Stage 3: Collaborator of Raftaar, Seedhe Maut, KR$NA (Rashmeet Kaur)",
+              "stage": 3,
+              "stage_name": "Collaborator Artists",
+              "collab_via": [
+                "Raftaar",
+                "Seedhe Maut",
+                "KR$NA"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -35,7 +35,7 @@ def merge_results():
 
         count = 0
         for rec in data.get("recommendations", []):
-            all_recs.append({
+            entry = {
                 "song": rec["recording"]["name"],
                 "artist": rec["artist"]["name"],
                 "mbid": rec["recording"]["mbid"],
@@ -44,7 +44,11 @@ def merge_results():
                 "year": rec["recording"].get("year"),
                 "stage": stage_num,
                 "stage_name": stage_name,
-            })
+            }
+            # Preserve collaboration path for Stage 3
+            if stage_num == 3:
+                entry["collab_via"] = rec.get("artist", {}).get("collab_via", [])
+            all_recs.append(entry)
             count += 1
 
         print(f"  Stage {stage_num} ({stage_name}): {count} songs")

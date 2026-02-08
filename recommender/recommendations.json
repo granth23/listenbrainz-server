@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-02-06T13:10:56.046589+00:00",
+    "generated_at": "2026-02-08T11:17:38.272914+00:00",
     "total_recommendations": 75,
     "stages": [
       {
@@ -529,7 +529,11 @@
       "release": "The Uprising",
       "year": 2013,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Seedhe Maut",
+        "Sez on the Beat"
+      ]
     },
     {
       "song": "Hold Tight / Let Me Think About It (a cappella) / Still Getting It",
@@ -539,7 +543,11 @@
       "release": "Mash Up Mix: Bass 2012",
       "year": 2012,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Seedhe Maut",
+        "Sez on the Beat"
+      ]
     },
     {
       "song": "Fading Out",
@@ -549,7 +557,11 @@
       "release": "Matriarchy",
       "year": 2020,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Seedhe Maut",
+        "Sez on the Beat"
+      ]
     },
     {
       "song": "Hauli Hauli",
@@ -559,7 +571,11 @@
       "release": "Khel Khel Mein",
       "year": 2024,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Raftaar",
+        "Badshah"
+      ]
     },
     {
       "song": "Echo",
@@ -569,7 +585,12 @@
       "release": "Echo",
       "year": 2021,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Seedhe Maut",
+        "KR$NA",
+        "King"
+      ]
     },
     {
       "song": "Pov: Falling In Love (2022)",
@@ -579,7 +600,12 @@
       "release": "Pov: Falling In Love (2022)",
       "year": 2022,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "Badshah",
+        "DIVINE"
+      ]
     },
     {
       "song": "Yaariyan Mashup",
@@ -589,7 +615,11 @@
       "release": "Yaariyan",
       "year": 2013,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Raftaar",
+        "Badshah"
+      ]
     },
     {
       "song": "Hai Halla",
@@ -599,7 +629,11 @@
       "release": "Hai Halla",
       "year": 2017,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Raftaar",
+        "Badshah"
+      ]
     },
     {
       "song": "Lipstick Laga Ke",
@@ -609,7 +643,11 @@
       "release": "Great Grand Masti",
       "year": 2016,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Raftaar",
+        "Badshah"
+      ]
     },
     {
       "song": "Addicted (ਆਦੀ)",
@@ -619,7 +657,12 @@
       "release": "Addicted (ਆਦੀ)",
       "year": 2024,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "Badshah",
+        "DIVINE"
+      ]
     },
     {
       "song": "Dil Banaane Waaleya",
@@ -629,7 +672,12 @@
       "release": "Fighter",
       "year": 2024,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "Badshah",
+        "DIVINE"
+      ]
     },
     {
       "song": "Kho Sa Gaya Hoon",
@@ -639,7 +687,11 @@
       "release": "Yaariyan 2",
       "year": 2023,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Raftaar",
+        "Badshah"
+      ]
     },
     {
       "song": "Yaad Reh Jaati Hai (From “The Buckingham Murders”)",
@@ -649,7 +701,11 @@
       "release": "The Buckingham Murders (Original Motion Picture Soundtrack)",
       "year": 2024,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Raftaar",
+        "Badshah"
+      ]
     },
     {
       "song": "Kobita",
@@ -659,7 +715,11 @@
       "release": "Bikash Weds Pinky: Amar Xopun",
       "year": 2024,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "DIVINE",
+        "Ritviz"
+      ]
     },
     {
       "song": "Run Down the City - Monica",
@@ -669,7 +729,11 @@
       "release": "Dhurandhar",
       "year": 2025,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "King"
+      ]
     },
     {
       "song": "Party Mashup (By DJ NYK)",
@@ -679,7 +743,12 @@
       "release": "Party Mashup (By DJ NYK)",
       "year": 2021,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Raftaar",
+        "Seedhe Maut",
+        "KR$NA"
+      ]
     },
     {
       "song": "Who’s That Girl",
@@ -689,7 +758,12 @@
       "release": "Only Love Gets Reply",
       "year": 2024,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "Sez on the Beat",
+        "KR$NA"
+      ]
     },
     {
       "song": "Finito",
@@ -699,7 +773,12 @@
       "release": "Amavas",
       "year": 2019,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "Sez on the Beat",
+        "KR$NA"
+      ]
     },
     {
       "song": "Khat",
@@ -709,7 +788,12 @@
       "release": "Guru Randhawa (At Its Best)",
       "year": 2018,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "Sez on the Beat",
+        "KR$NA"
+      ]
     },
     {
       "song": "Kapoor & Sons Mashup (By DJ Chetas) [From \"Kapoor & Sons (Since 1921)\"]",
@@ -719,7 +803,11 @@
       "release": "Kapoor & Sons Mashup (By DJ Chetas)",
       "year": 2016,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "DIVINE",
+        "Ritviz"
+      ]
     },
     {
       "song": "We Dem Deeper Boyz (Steven Montana Edit)",
@@ -729,7 +817,12 @@
       "release": null,
       "year": 0,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Seedhe Maut",
+        "KR$NA",
+        "King"
+      ]
     },
     {
       "song": "Astral Storm (Khwaabon Ka Dariya)",
@@ -739,7 +832,11 @@
       "release": "The Indian Odyssey",
       "year": 2025,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "King"
+      ]
     },
     {
       "song": "Dua",
@@ -749,7 +846,11 @@
       "release": "Article 370",
       "year": 2024,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Karan Aujla",
+        "King"
+      ]
     },
     {
       "song": "Clouds",
@@ -759,7 +860,12 @@
       "release": "Certified Clubtapes, Vol. 10",
       "year": 2015,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Seedhe Maut",
+        "KR$NA",
+        "King"
+      ]
     },
     {
       "song": "Nadiyon Paar (Let the Music Play Again)",
@@ -769,7 +875,12 @@
       "release": "Roohi",
       "year": 2021,
       "stage": 3,
-      "stage_name": "Collaborator Artists"
+      "stage_name": "Collaborator Artists",
+      "collab_via": [
+        "Raftaar",
+        "Seedhe Maut",
+        "KR$NA"
+      ]
     }
   ]
 }
