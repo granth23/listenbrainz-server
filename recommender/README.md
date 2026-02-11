@@ -20,7 +20,11 @@ pip install -r requirements.txt
 python3 run.py
 ```
 
-* **Input:** `songs.jsonl` — a sample listening history (included).
+* **Input:** `songs.jsonl` — a sample listening history (included).  
+  You may also export your own listening history directly from ListenBrainz:  
+  https://listenbrainz.org/settings/export/  
+
+  For this project, I used my personal listens for the month of January.
 * **Output:** `recommendations.json` — 75 recommended tracks with metadata, scores, and per-track reasons.
 
 **Convert to JSPF playlist:**
